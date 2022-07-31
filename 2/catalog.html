@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+  <title>HTML Academy: Седона catalog</title>
+  <base href="https://htmlacademy-adaptive.github.io/1957975-sedona-26/2/">
+</head>
+<body>
+  <header class="main-header">
+    <a href="index.html" class="main-header__logo">
+      <img src="img/logo.svg" alt="логотип сайта" width="185" height="96">
+    </a>
+
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">открыть меню</span>
+      </button>
+
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list" >
+          <li class="main-nav__item main-nav__item--current"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="catalog.html">Фото и видео</a></li>
+          <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="catalog-countainer">
+    <h1 class="visually-hidden">Sedona</h1>
+    <img src="img/index-background-catalog.jpg" alt="Фон каталога">
+    <img src="img/SEDONA.svg" alt="Седона">
+  </section>
+
+  <section class="catalog-discription">
+    <h2 class="catalog-discription__title">Фото и видео</h2>
+    <p class="catalog-discription__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+  </section>
+
+  <section class="catalog">
+    <h2 class="visually-hidden">фото каталога</h2>
+
+    <div class="catalog-card-wraper catalog-card">
+      <img class="catalog-card__img" src="#" alt="неродные просторы фото" width="280" height="280">
+      <p class="catalog-card__title">неродные просторы</p>
+      <p class="catalog-card__text">Автор фото: Борис</p>
+      <p class="catalog-card__liks">1350</p>
+    </div>
+    <div class="catalog-card-wraper catalog-card">
+      <img class="catalog-card__img" src="#" alt="Местная растительность фото" width="280" height="280">
+      <p class="catalog-card__title">Местная растительность</p>
+      <p class="catalog-card__text">Автор фото: Сергей</p>
+      <p class="catalog-card__liks">143</p>
+    </div>
+    <div class="catalog-card-wraper catalog-card">
+      <img class="catalog-card__img" src="#" alt="Дорога на север фото" width="280" height="280">
+      <p class="catalog-card__title">Дорога на север</p>
+      <p class="catalog-card__text">Автор фото: Петр</p>
+      <p class="catalog-card__liks">96</p>
+    </div>
+    <div class="catalog-card-wraper catalog-card">
+      <img class="catalog-card__img" src="#" alt="Мост дьявола фото" width="280" height="280">
+      <p class="catalog-card__title">Мост дьявола</p>
+      <p class="catalog-card__text">Автор фото: Антон</p>
+      <p class="catalog-card__liks">2554</p>
+    </div>
+  </section>
+
+  <section class="promo">
+    <h2 class="visually-hidden">Промо ролик</h2>
+
+    <div class="promo__discription promo-discription">
+      <p class="promo-discription__title">Все еще сомневаетесь?</p>
+      <p class="promo-discription__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+       <iframe width="280" height="177"  src="https://www.youtube.com/embed/HU22peKtyfY" title="Sedona Tour" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <h3 class="main-footer__title">#visitsedona</h3>
+
+    <ul class="main-footer__list">
+      <li class="main-footer__social-item">
+        <a href="https://vk.com/htmlacademy">
+          <img src="img/social-VK.svg" alt="ссылка на вконтакте">
+        </a>
+      </li>
+      <li class="main-footer__social-item">
+        <a href="https://t.me/s/htmlacademy">
+          <img src="img/social-telegramm.svg" alt="ссылка на телеграмм">
+        </a>
+      </li>
+      <li class="main-footer__social-item">
+        <a href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
+          <img src="img/social-youtube.svg" alt="ссылка на Ютьюб">
+        </a>
+      </li>
+    </ul>
+    <div class="main-footer__htmlacademy htmlacademy">
+      <p class="htmlacademy__text">Разработано</p>
+      <a class="htmlacademy__link">
+        <img src="img/htmlacademy.svg" alt="HTMLAcademy logo" width="27" height="34">
+      </a>
+    </div>
+
+  </footer>
+</body>
+</html>
