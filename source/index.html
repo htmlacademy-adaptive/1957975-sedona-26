@@ -1,12 +1,127 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+  <head class="page">
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page__boody">
+    <header class="main-header">
+      <a href="index.html" class="main-header__logo">
+        <img src="img/logo.svg" alt="логотип сайта" width="185" height="96">
+      </a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">открыть меню</span>
+        </button>
 
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list" >
+            <li class="main-nav__item main-nav__item--current"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="catalog.html">Фото и видео</a></li>
+            <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="main-countainer">
+      <h1 class="visually-hidden">Welcome to the Sedona</h1>
+
+      <div class="description-page">
+        <img class="description-page__background" src="img/index-background.svg" alt="главный фон">
+        <img class="description-page__img-description" src="img/text-index.svg.svg" alt="Welcome to the Sedona IMG">
+        <p class="description-page__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="description-page__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="advantages__wrapper">
+        <h2 class="visually-hidden">ПРЕИМУЩЕСТВА</h2>
+
+        <h3 class="advantages__title">НАСТОЯЩИЙ ГОРОДОК</h3>
+        <p class="advantages__text">— №1 —</p>
+        <p class="advantages__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+        <img class="advantages__img" src="img/index-background-advantages.jpg" alt="Фоновео изображение главноего экрана">
+
+        <ul class="advantages__list">
+          <li class="advantages__item item">
+            <h3 class="item__title">Жилье</h3>
+            <p class="item__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="advantages__item item">
+            <h3 class="item__title">Еда </h3>
+            <p class="item__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+          </li>
+          <li class="advantages__item item">
+            <h3 class="item__title">Сувениры</h3>
+            <p class="item__description">Не только китайского, но и местного производства!</p>
+          </li>
+        </ul>
+
+        <h3 class="advantages__title">ТАМ ЕСТЬ Мост дьявола</h3>
+        <p class="advantages__text">— №2 —</p>
+        <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        <img class="advantages__img" src="img/index-background-advantages2.jpg" alt="фоновое изображение два главного экрана">
+
+        <ul class="advantages__sub-list">
+          <li class="advantages__sub-item sup-item">
+            <h3 class="sup-item__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+            <p class="sup-item__text">— №3 —</p>
+            <p class="sup-item__description">ВСЕ интересные места находятся очень близко</p>
+          </li>
+          <li class="advantages__sub-item sup-item">
+            <h3 class="sup-item__title">КРАСИВАЯ ДОРОГА</h3>
+            <p class="sup-item__text">— №4 —</p>
+            <p class="sup-item__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+          </li>
+          <li class="advantages__sub-item sup-item">
+            <h3 class="sup-item__title">МАЛО ТУРИСТОВ</h3>
+            <p class="sup-item__text">— №5 —</p>
+            <p class="sup-item__description">Большинство едет в гранд каньони толпится там</p>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+    <section class="find-hootle-section">
+      <div class="find-hootle-section__wrapper">
+        <h3 class="find-hootle-section__title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
+        <p class="find-hootle-section__text">Укажите предполагаемые датыпоездки, и мы покажем вам лучшиепредложения гостиниц в седоне</p>
+        <button class="find-hootle-section__button">Найти Гостиницу</button>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d921259.3549838783!2d-112.05884697314406!3d34.26014214106728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1659173852753!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <h3 class="main-footer__title">#visitsedona</h3>
+
+      <ul class="main-footer__list">
+        <li class="main-footer__social-item">
+          <a href="https://vk.com/htmlacademy">
+            <img src="img/social-VK.svg" alt="ссылка на вконтакте">
+          </a>
+        </li>
+        <li class="main-footer__social-item">
+          <a href="https://t.me/s/htmlacademy">
+            <img src="img/social-telegramm.svg" alt="ссылка на телеграмм">
+          </a>
+        </li>
+        <li class="main-footer__social-item">
+          <a href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
+            <img src="img/social-youtube.svg" alt="ссылка на Ютьюб">
+          </a>
+        </li>
+      </ul>
+      <div class="main-footer__htmlacademy htmlacademy">
+        <p class="htmlacademy__text">Разработано</p>
+        <a class="htmlacademy__link">
+          <img src="img/htmlacademy.svg" alt="HTMLAcademy logo" width="27" height="34">
+        </a>
+      </div>
+
+    </footer>
   </body>
 </html>
