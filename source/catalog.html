@@ -8,22 +8,30 @@
   <title>HTML Academy: Седона catalog</title>
 </head>
 <body>
-  <header class="main-header">
-    <a href="index.html" class="main-header__logo">
-      <img src="img/logo.svg" alt="логотип сайта" width="185" height="96">
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html" >
+      <img class="page-header__logo-image" src="img/logo.svg" alt="логотип сайта" width="185" height="96">
     </a>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+    <nav class="page-header__navigation navigation">
+      <button class="navigation__toggle button" type="button">
         <span class="visually-hidden">открыть меню</span>
       </button>
 
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list" >
-          <li class="main-nav__item main-nav__item--current"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a href="catalog.html">Фото и видео</a></li>
-          <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list" >
+          <li class="navigation__item navigation__item--current">
+            <a class="navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="https://htmlacademy.ru/">Html Academy</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -79,32 +87,35 @@
     </div>
   </section>
 
-  <footer class="main-footer">
-    <h3 class="main-footer__title">#visitsedona</h3>
+  <footer class="page-footer">
+    <h2 class="page-footer__title">#visitsedona</h2>
+    <section class="page-footer__social social">
+      <h3 class="visually-hidden">Соцсети</h3>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="https://vk.com/htmlacademy">
+            <img src="img/social-VK.svg" alt="ссылка на вконтакте">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://t.me/s/htmlacademy">
+            <img src="img/social-telegramm.svg" alt="ссылка на телеграмм">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
+            <img src="img/social-youtube.svg" alt="ссылка на Ютьюб">
+          </a>
+        </li>
+      </ul>
+    </section>
 
-    <ul class="main-footer__list">
-      <li class="main-footer__social-item">
-        <a href="https://vk.com/htmlacademy">
-          <img src="img/social-VK.svg" alt="ссылка на вконтакте">
-        </a>
-      </li>
-      <li class="main-footer__social-item">
-        <a href="https://t.me/s/htmlacademy">
-          <img src="img/social-telegramm.svg" alt="ссылка на телеграмм">
-        </a>
-      </li>
-      <li class="main-footer__social-item">
-        <a href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
-          <img src="img/social-youtube.svg" alt="ссылка на Ютьюб">
-        </a>
-      </li>
-    </ul>
-    <div class="main-footer__htmlacademy htmlacademy">
-      <p class="htmlacademy__text">Разработано</p>
+    <section class="page-footer__htmlacademy htmlacademy">
+      <h2 class="htmlacademy__title">Разработано</h2>
       <a class="htmlacademy__link">
-        <img src="img/htmlacademy.svg" alt="HTMLAcademy logo" width="27" height="34">
+        <img class="htmlacademy__image" src="img/htmlacademy.svg" alt="HTMLAcademy logo" width="27" height="34">
       </a>
-    </div>
+    </section>
 
   </footer>
 </body>
