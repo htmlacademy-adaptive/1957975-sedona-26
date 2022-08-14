@@ -1,0 +1,181 @@
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card--decoration {
+  background-color: #81B3D2;
+}
+
+.card__warper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 282px;
+  padding-top: 33px;
+}
+
+.card__title {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+
+.card__text.number {
+  padding-top: 24px;
+}
+
+.card__text {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding-top: 17px;
+}
+
+.card__img {
+  display: block;
+  padding-top: 40px;
+}
+
+// первый список с преемуществами
+
+.advantages__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 282px;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.item__description {
+  margin: 0;
+}
+
+// <!-- блок с описанием преимуществ №1  -->
+.item {
+  width: 225px;
+  position: relative;
+}
+
+.item:last-of-type {
+  padding-bottom: 47px;
+}
+
+.item__title {
+  margin: 0;
+  position: relative;
+  color: #000000;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+
+.item__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  padding-top: 16px;
+}
+
+.item__img {
+  position: absolute;
+}
+
+.item__img-home {
+  left: -47px;
+  top: 21px;
+}
+
+.item__img-eat {
+  left: -47px;
+  top: 21px;
+}
+
+.item__img-gift {
+  left: -47px;
+  top: 21px;
+}
+
+
+// <!-- блок с описанием преимуществ №2  -->
+
+.advantages__sub-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eeeeee;
+  width: inherit;
+}
+
+.sup-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 248px;
+}
+
+.sup-item:not(:last-child)::after {
+  display: block;
+  background: #D6D6D6;
+  content: '';
+  align-self: stretch;
+  flex-grow: 0;
+  height: 1px;
+}
+
+.sup-item__title {
+  margin: 0;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 25px;
+}
+
+.sup-item__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  padding: 20px 0;
+}
+
+.sup-item__description {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  padding-bottom: 20px;
+  display: block;
+}

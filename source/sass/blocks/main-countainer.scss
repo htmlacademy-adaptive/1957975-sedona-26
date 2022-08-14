@@ -1,0 +1,48 @@
+// приветсвенная картинка курорта
+.description-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../img/index-background.svg");
+}
+
+.description-page__img-description__warper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.description-page__img-description {
+padding-top: 90px;
+padding-bottom: 85px;
+}
+
+// тестовое описание курорта (слоган)
+.description-page__warperr-text {
+
+  padding-top:39px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.description__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+  width: 285px;
+}
+
+.description__text{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 15px 0 0 0;
+  padding-bottom: 53px;
+  width: 285px;
+}

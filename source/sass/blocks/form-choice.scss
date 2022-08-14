@@ -1,0 +1,14 @@
+// <!-- общее впечатление  -->
+.form-choice__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.form-choice__item-label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}

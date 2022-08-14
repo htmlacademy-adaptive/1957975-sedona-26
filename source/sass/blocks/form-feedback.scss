@@ -1,0 +1,15 @@
+//<!-- опишите свои эмоции -->
+@use "_variables";
+
+.form-feedback__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-feedback__anotation {
+  text-align: end;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  color: $gray;
+}
