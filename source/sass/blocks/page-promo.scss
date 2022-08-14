@@ -1,0 +1,38 @@
+//  <!-- секция с промо роликом -->
+
+.page_promo {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+}
+
+.promo__discription {
+  padding-top: 17px;
+  width: 266px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo-discription__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  }
+
+.promo-discription__text {
+  margin: 0;
+
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.promo__video {
+  padding-top: 38px;
+}

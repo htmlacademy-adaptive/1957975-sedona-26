@@ -1,1 +1,18 @@
 // Начните писать стили здесь
+@use "blocks/fonts.scss";
+@use "blocks/_variables.scss";
+@use "blocks/page-header.scss";
+@use "blocks/main-countainer.scss";
+@use "blocks/advantages.scss";
+@use "blocks/find-hootle-section.scss";
+@use "blocks/page-footer.scss";
+@use "blocks/page__catalog.scss";
+@use "blocks/catalog-countainer.scss";
+@use "blocks/catalog-discription.scss";
+@use "blocks/page-promo.scss";
+@use "blocks/form-info-countainer.scss";
+@use "blocks/form.scss";
+@use "blocks/form-contacts.scss";
+@use "blocks/form-choice.scss";
+@use "blocks/form-attractions.scss";
+@use "blocks/form-feedback.scss";

@@ -1,0 +1,16 @@
+// <!-- Выбор посещенных достопримечательностей -->
+
+.form-attractions__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.form-attractions__item-lable {
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}

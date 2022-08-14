@@ -1,0 +1,56 @@
+// <!-- контакты для обратной свзяи -->
+.form-conatcts__contacts-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 16px;
+
+}
+
+
+.contacts__item-contacts {
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.item-contacts__wrapper {
+  display: flex;
+
+}
+.contacts__item-input {
+
+  width: 222px;
+  height: 58px;
+  border: none;
+  background-color: #F2F2F2;
+
+  &:hover {
+    background-color: #E5E5E5;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    outline-width: 4px;
+    outline-color: #E5E5E5;
+  }
+  &:focus {
+    outline-width: 4px;
+    outline-color: #E5E5E5;
+  }
+}
+
+.contacts__item-image {
+  padding: 20px;
+  background-color: #E6E6E6;
+}

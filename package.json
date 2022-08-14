@@ -19,7 +19,7 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
-    "start": "gulp"
+    "start": "npx gulp"
   },
   "browserslist": [
     "last 2 versions",
@@ -39,5 +39,8 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }

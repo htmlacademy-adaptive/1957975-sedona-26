@@ -1,0 +1,33 @@
+//   <!-- описани каталога -->
+.catalog-discription {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+
+  &::after {
+    content: '';
+    background-color:#E5E5E5;
+    height: 1px;
+    width: 320px;
+    display: block;
+  }
+}
+.catalog-discription__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.catalog-discription__text {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+}
