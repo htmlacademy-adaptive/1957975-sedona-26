@@ -11,9 +11,7 @@
   display: grid;
   grid-template-columns: auto;
   gap: 16px;
-
 }
-
 
 .contacts__item-contacts {
   padding-left: 16px;
@@ -26,31 +24,32 @@
 
 .item-contacts__wrapper {
   display: flex;
-
 }
+
 .contacts__item-input {
 
   width: 222px;
   height: 58px;
   border: none;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 
   &:hover {
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
   }
 
   &:active {
     background-color: #ffffff;
     outline-width: 4px;
-    outline-color: #E5E5E5;
+    outline-color: #e5e5e5;
   }
+
   &:focus {
     outline-width: 4px;
-    outline-color: #E5E5E5;
+    outline-color: #e5e5e5;
   }
 }
 
 .contacts__item-image {
   padding: 20px;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }

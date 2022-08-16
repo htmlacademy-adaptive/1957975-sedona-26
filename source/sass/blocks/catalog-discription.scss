@@ -7,13 +7,14 @@
   width: 280px;
 
   &::after {
-    content: '';
-    background-color:#E5E5E5;
+    content: "";
+    background-color: #e5e5e5;
     height: 1px;
     width: 320px;
     display: block;
   }
 }
+
 .catalog-discription__title {
   margin: 0;
   font-size: 18px;

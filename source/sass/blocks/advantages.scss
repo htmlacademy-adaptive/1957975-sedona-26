@@ -6,7 +6,7 @@
 }
 
 .card--decoration {
-  background-color: #81B3D2;
+  background-color: #81b3d2;
 }
 
 .card__warper {
@@ -68,10 +68,6 @@
   flex-direction: column;
 }
 
-.item__description {
-  margin: 0;
-}
-
 // <!-- блок с описанием преимуществ №1  -->
 .item {
   width: 225px;
@@ -99,6 +95,7 @@
   text-transform: uppercase;
   color: #333333;
   padding-top: 16px;
+  margin: 0;
 }
 
 .item__img {
@@ -144,8 +141,8 @@
 
 .sup-item:not(:last-child)::after {
   display: block;
-  background: #D6D6D6;
-  content: '';
+  background: #d6d6d6;
+  content: "";
   align-self: stretch;
   flex-grow: 0;
   height: 1px;

@@ -1,6 +1,7 @@
 // Начните писать стили здесь
+@use "blocks/variables.scss";
+@use "blocks/page.scss";
 @use "blocks/fonts.scss";
-@use "blocks/_variables.scss";
 @use "blocks/page-header.scss";
 @use "blocks/main-countainer.scss";
 @use "blocks/advantages.scss";
@@ -16,3 +17,4 @@
 @use "blocks/form-choice.scss";
 @use "blocks/form-attractions.scss";
 @use "blocks/form-feedback.scss";
+@use "blocks/visually-hidden.scss"

@@ -1,6 +1,6 @@
 .form-group::before {
-  content: '';
-  background-color:#E5E5E5;
+  content: "";
+  background-color: #e5e5e5;
   height: 1px;
   width: 320px;
   display: block;
@@ -65,6 +65,7 @@
     outline-width: 4px;
     outline-color: #E5E5E5;
   }
+
   &:focus {
     outline-width: 4px;
     outline-color: #E5E5E5;
