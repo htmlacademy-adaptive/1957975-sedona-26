@@ -1,20 +1,34 @@
 // Начните писать стили здесь
-@use "blocks/variables.scss";
-@use "blocks/page.scss";
-@use "blocks/fonts.scss";
-@use "blocks/page-header.scss";
-@use "blocks/main-countainer.scss";
-@use "blocks/advantages.scss";
-@use "blocks/find-hootle-section.scss";
-@use "blocks/page-footer.scss";
-@use "blocks/page__catalog.scss";
-@use "blocks/catalog-countainer.scss";
-@use "blocks/catalog-discription.scss";
-@use "blocks/page-promo.scss";
-@use "blocks/form-info-countainer.scss";
-@use "blocks/form.scss";
-@use "blocks/form-contacts.scss";
-@use "blocks/form-choice.scss";
-@use "blocks/form-attractions.scss";
-@use "blocks/form-feedback.scss";
-@use "blocks/visually-hidden.scss"
+
+// переменные
+@import "variables.scss";
+// глобальные стили
+@import "global.scss";
+
+// Стиль кнопок
+@import "button.scss";
+
+// гломальные стили для страницы
+@import "blocks/page.scss";
+// шрифты
+@import "blocks/fonts.scss";
+// шапка сайта
+@import "blocks/page-header.scss";
+@import "blocks/main-countainer.scss";
+@import "blocks/advantages.scss";
+@import "blocks/find-hootle-section.scss";
+// подвал
+@import "blocks/page-footer.scss";
+// каталог главная часть
+@import "blocks/page-catalog.scss";
+@import "blocks/catalog-countainer.scss";
+@import "blocks/catalog-discription.scss";
+@import "blocks/page-promo.scss";
+@import "blocks/form-info-countainer.scss";
+@import "blocks/form.scss";
+@import "blocks/form-contacts.scss";
+@import "blocks/form-choice.scss";
+@import "blocks/form-attractions.scss";
+@import "blocks/form-feedback.scss";
+// скрытие контента
+@import "blocks/visually-hidden.scss";

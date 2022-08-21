@@ -1,0 +1,13 @@
+
+.button {
+  background-color: $light-blue;
+  color: $white;
+
+  &:hover {
+    background-color: $blue;
+  }
+
+  &:active {
+    background-color: $darck-blue;
+  }
+}
