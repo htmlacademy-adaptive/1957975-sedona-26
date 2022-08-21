@@ -14,7 +14,6 @@
   background-image: url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
-  background-size: cover;
   background-color: $light-blue;
   min-width: inherit;
 }
@@ -79,6 +78,7 @@
     background-image: url("../img/Vector.svg"), url("../img/back-desktop.jpg");
     background-repeat: no-repeat, no-repeat;
     width: 768px;
+    background-position-y: bottom;
   }
 
   .description-page__warperr-text {
