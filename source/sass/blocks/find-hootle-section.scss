@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .find-hootle-section__wrapper {
   display: flex;
   flex-direction: column;
@@ -29,13 +30,14 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
+  text-align: center;
 }
 
 .find-hootle-section--button {
   width: 284px;
   height: 58px;
-  background-color: #81B3D2;
-  color: #FFFFFF;
+  background-color: $light-blue;
+  color: $white;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
@@ -48,4 +50,39 @@
 
 .find-hootle-section__map {
   padding-top: 49px;
+}
+
+@media (min-width: $tablet-width) {
+  //     <!-- блок с поиском гостиниц -->
+  .find-hootle-section__wrapper {
+    padding: 60px 155px 58px;
+    width: 435px;
+  }
+
+  .find-hootle-section__title {
+    padding: 0;
+  }
+
+  .find-hootle-section__text {
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+
+  .find-hootle-section--button {
+    width: 458px;
+  }
+
+  .find-hootle-section__map {
+    width: 768px;
+    height: 350px;
+    padding-top: 0;
+  }
+}
+
+
+// десктоп
+@media (min-width: $desktop-width) {
+  .find-hootle-section__map {
+    width: 1200px;
+  }
 }

@@ -1,4 +1,8 @@
 // <!-- общее впечатление  -->
+.form-choice {
+  padding-bottom: 24px;
+}
+
 .form-choice__list {
   list-style-type: none;
   padding: 0;
@@ -7,8 +11,58 @@
   gap: 16px;
 }
 
+.form-choice__item {
+  padding: 10px 0;
+}
+
+.radio {
+  position: relative;
+}
+
 .form-choice__item-label {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+}
+
+.radio::before {
+  position: absolute;
+  content: "";
+  width: 46px;
+  height: 46px;
+  left: -53px;
+  top: -12px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.radio::after {
+  position: absolute;
+  left: -38px;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $gray;
+}
+
+.form-choice__input:checked + .radio::after {
+  content: "";
+}
+// планщет
+@media (min-width: $tablet-width) {
+  .form-choice {
+    grid-row-start: 2;
+    grid-column-start: 1;
+
+    grid-row-end: 3;
+    grid-column-end: 3;
+  }
+
+  .form-choice__list {
+    grid-template-columns: 1fr 1fr;
+    width: 575px;
+    margin: 0 auto;
+    text-align: left;
+  }
 }

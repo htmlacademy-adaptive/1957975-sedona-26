@@ -1,18 +1,45 @@
 // Начните писать стили здесь
-@use "blocks/fonts.scss";
-@use "blocks/_variables.scss";
-@use "blocks/page-header.scss";
-@use "blocks/main-countainer.scss";
-@use "blocks/advantages.scss";
-@use "blocks/find-hootle-section.scss";
-@use "blocks/page-footer.scss";
-@use "blocks/page__catalog.scss";
-@use "blocks/catalog-countainer.scss";
-@use "blocks/catalog-discription.scss";
-@use "blocks/page-promo.scss";
-@use "blocks/form-info-countainer.scss";
-@use "blocks/form.scss";
-@use "blocks/form-contacts.scss";
-@use "blocks/form-choice.scss";
-@use "blocks/form-attractions.scss";
-@use "blocks/form-feedback.scss";
+
+// переменные
+@import "variables.scss";
+// глобальные стили
+@import "global.scss";
+
+// Стиль кнопок
+@import "button.scss";
+
+// гломальные стили для страницы
+@import "blocks/page.scss";
+// шрифты
+@import "blocks/fonts.scss";
+// шапка сайта
+@import "blocks/page-header.scss";
+@import "blocks/main-countainer.scss";
+@import "blocks/advantages.scss";
+@import "blocks/find-hootle-section.scss";
+// подвал
+@import "blocks/page-footer.scss";
+// секция Hero каталога
+@import "blocks/catalog-hero.scss";
+// каталог главная часть
+@import "blocks/page-catalog.scss";
+//  каталог
+@import "blocks/catalog.scss";
+@import "blocks/catalog-discription.scss";
+@import "blocks/page-promo.scss";
+// секция Hero формы
+@import "blocks/form-hero.scss";
+// описание формы
+@import "blocks/form-info.scss";
+@import "blocks/form.scss";
+@import "blocks/form-contacts.scss";
+@import "blocks/form-choice.scss";
+@import "blocks/form-attractions.scss";
+@import "blocks/form-feedback.scss";
+// скрытие контента
+@import "blocks/visually-hidden.scss";
+// Модальные окна
+// Модкалка собообщение об Ошибка
+@import "blocks/modal-form-error.scss";
+// Модалка сообщение об успешной отправке
+@import "blocks/modal-form-completed.scss";

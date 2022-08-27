@@ -1,15 +1,23 @@
 //<!-- опишите свои эмоции -->
-@use "_variables";
 
-.form-feedback__wrapper {
-  display: flex;
-  flex-direction: column;
+.form-feedback-area {
+  padding: 16px;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  resize: none;
 }
 
-.form-feedback__anotation {
-  text-align: end;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 21px;
-  color: $gray;
+// Планшет
+@media (min-width: $tablet-width) {
+  .form-feedback {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-row-end: 5;
+    grid-column-end: 3;
+  }
+
+  .form-feedback-area {
+    width: 648px;
+  }
 }

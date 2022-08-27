@@ -1,16 +1,79 @@
 // <!-- Выбор посещенных достопримечательностей -->
+.form-attractions {
+  padding-bottom: 24px;
+}
 
 .form-attractions__list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
+  justify-content: start;
+  justify-items: start;
   gap: 16px;
 }
 
 .form-attractions__item-lable {
-
   font-weight: 700;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 2.5;
+}
+
+// планшет
+@media (min-width: $tablet-width) {
+  .form-attractions__title {
+    width: 308px;
+    margin: 0 auto;
+  }
+
+  .form-attractions {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 3;
+  }
+
+  .form-attractions__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 32px;
+    width: 480px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .form-attractions__item-lable {
+    position: relative;
+  }
+
+  .checkbox::before {
+    position: absolute;
+    content: "";
+    width: 46px;
+    height: 46px;
+    border-radius: 4px;
+    background-color: $soft-gray;
+    right: 100%;
+  }
+
+  .checkbox::after {
+    position: absolute;
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 46px;
+    fill: $gray;
+    top: 3px;
+    left: -33px;
+  }
+}
+
+.form-attractions__checkbox:checked + .checkbox::after {
+  content: "";
+}
+// десктоп
+@media (min-width: $desktop-width) {
+  .form-attractions__title {
+    width: 308px;
+    margin: 0 auto;
+  }
 }

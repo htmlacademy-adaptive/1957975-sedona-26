@@ -39,8 +39,5 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module",
-  "dependencies": {
-    "normalize.css": "^8.0.1"
-  }
+  "type": "module"
 }

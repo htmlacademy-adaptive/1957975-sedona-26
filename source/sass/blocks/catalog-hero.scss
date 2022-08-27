@@ -1,0 +1,39 @@
+//  <!-- секция Hero каталога -->
+.catalog-hero {
+  background-image: url("../../img/index-background-catalog.jpg");
+  background-repeat: no-repeat;
+  padding-top: 52px;
+  padding-bottom: 67px;
+  text-align: center;
+  display: block;
+}
+
+.catalog-hero__sedona {
+  width: 229px;
+  height: 39px;
+}
+
+// планшет
+@media (min-width: $tablet-width) {
+  .catalog-hero {
+    background-image: url("../img/Vector.svg"), url("../img/index-background-catalog2.jpg");
+    background-repeat: no-repeat, no-repeat;
+    padding-top: 95px;
+    padding-bottom: 114px;
+    width: 768px;
+    background-position-y: bottom;
+  }
+
+  .catalog-hero__sedona {
+    width: 456px;
+    height: 77px;
+  }
+}
+
+// Десктоп
+@media (min-width: $desktop-width) {
+  .catalog-hero {
+    background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-desktop-catalog-1200.jpg");
+    width: 100%;
+  }
+}

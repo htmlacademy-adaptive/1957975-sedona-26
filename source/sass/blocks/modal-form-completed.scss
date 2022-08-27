@@ -1,0 +1,54 @@
+.modal-form-completed {
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.modal-form-completed__wrapper {
+  padding: 45px 42px 28px;
+}
+
+.modal-form-completed__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 35px;
+}
+
+.modal-form-completed__text {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.modal-form-completed__input-wrapper {
+  background-color: $soft-gray;
+  padding: 20px;
+}
+
+.modal-form-completed__button {
+  width: 280px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+// Планшет
+@media (min-width: $tablet-width) {
+  .modal-form-completed {
+    width: 640px;
+  }
+
+  .modal-form-completed__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal-form-completed__wrapper {
+    padding: 53px 98px 30px;
+  }
+}

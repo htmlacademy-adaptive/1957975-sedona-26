@@ -1,42 +1,56 @@
 // приветсвенная картинка курорта
+.main-countainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+}
+
 .description-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../../img/index-background.svg");
+  background-image: url("../img/back-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-color: $light-blue;
+  min-width: inherit;
 }
 
-.description-page__img-description__warper{
+.description-page__img-description__warper {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .description-page__img-description {
-padding-top: 90px;
-padding-bottom: 85px;
+  padding-top: 90px;
+  padding-bottom: 85px;
+  width: 282px;
+  height: 214px;
 }
 
 // тестовое описание курорта (слоган)
 .description-page__warperr-text {
-
-  padding-top:39px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 285px;
 }
 
-.description__title {
+.description-page__title {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
-  width: 285px;
+  padding-top: 39px;
 }
 
-.description__text{
+.description-page__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -44,5 +58,50 @@ padding-bottom: 85px;
   color: #333333;
   margin: 15px 0 0 0;
   padding-bottom: 53px;
-  width: 285px;
+}
+
+// Планшетная версия
+@media (min-width: $tablet-width) {
+  .main-countainer {
+    display: block;
+    width: auto;
+  }
+
+  .description-page__img-description {
+    width: 461px;
+    height: 350px;
+    padding-top: 77px;
+    padding-bottom: 91px;
+  }
+
+  .description-page {
+    background-image: url("../img/Vector.svg"), url("../img/back-desktop.jpg");
+    background-repeat: no-repeat, no-repeat;
+    width: 768px;
+    background-position-y: bottom;
+  }
+
+  .description-page__warperr-text {
+    width: auto;
+    display: flex;
+    text-align: center;
+  }
+
+  .description-page__title {
+    font-size: 21px;
+    line-height: 26px;
+    width: 520px;
+  }
+
+  .description-page__text {
+    width: 520px;
+  }
+}
+
+// десктоп
+@media (min-width: $desktop-width) {
+  .description-page {
+    width: 1200px;
+    background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-desktop1200.jpg");
+  }
 }
