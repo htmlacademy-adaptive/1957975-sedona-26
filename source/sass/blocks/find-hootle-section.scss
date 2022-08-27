@@ -78,3 +78,11 @@
     padding-top: 0;
   }
 }
+
+
+// десктоп
+@media (min-width: $desktop-width) {
+  .find-hootle-section__map {
+    width: 1200px;
+  }
+}

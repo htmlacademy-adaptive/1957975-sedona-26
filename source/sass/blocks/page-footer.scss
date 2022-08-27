@@ -80,6 +80,7 @@
   }
 }
 
+// планшет
 @media (min-width: $tablet-width) {
   .page-footer {
     padding: 36px 0;
@@ -98,5 +99,12 @@
 
   .page-footer__htmlacademy {
     padding: 0;
+  }
+}
+
+// десктоп
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 975px;
   }
 }

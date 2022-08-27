@@ -1,15 +1,4 @@
 
-.description-page__background {
-  background-image: url("../../img/back-desktop-form.jpg");
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.description-page__img {
-  padding: 52px 0 67px;
-}
-
 .form-info {
   display: flex;
   flex-direction: column;
@@ -35,4 +24,29 @@
   font-size: 14px;
   line-height: 21px;
   text-align: center;
+}
+
+// Планшет
+@media (min-width: $tablet-width) {
+  .form-info {
+    padding: 64px 0 102px;
+    width: 458px;
+  }
+
+  .form-info__title {
+    font-size: 30px;
+    line-height: 26px;
+    padding: 0;
+  }
+
+  .form-info__text {
+    padding-bottom: 0;
+  }
+}
+
+// десктоп
+@media (min-width: $desktop-width) {
+  .form-info {
+    padding: 115px 0 66px;
+  }
 }

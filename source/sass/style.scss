@@ -23,9 +23,14 @@
 @import "blocks/catalog-hero.scss";
 // каталог главная часть
 @import "blocks/page-catalog.scss";
+//  каталог
+@import "blocks/catalog.scss";
 @import "blocks/catalog-discription.scss";
 @import "blocks/page-promo.scss";
-@import "blocks/form-info-countainer.scss";
+// секция Hero формы
+@import "blocks/form-hero.scss";
+// описание формы
+@import "blocks/form-info.scss";
 @import "blocks/form.scss";
 @import "blocks/form-contacts.scss";
 @import "blocks/form-choice.scss";
@@ -33,3 +38,8 @@
 @import "blocks/form-feedback.scss";
 // скрытие контента
 @import "blocks/visually-hidden.scss";
+// Модальные окна
+// Модкалка собообщение об Ошибка
+@import "blocks/modal-form-error.scss";
+// Модалка сообщение об успешной отправке
+@import "blocks/modal-form-completed.scss";

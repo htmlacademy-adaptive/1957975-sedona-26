@@ -36,3 +36,29 @@
 .promo__video {
   padding-top: 38px;
 }
+
+
+// Планшет
+
+@media (min-width: $tablet-width) {
+  .page_promo {
+    padding-bottom: 40px;
+  }
+
+  .promo__discription {
+    width: 445px;
+    padding-top: 57px;
+  }
+
+  .promo-discription__title {
+
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .promo__video {
+    width: 648px;
+    height: 500px;
+    padding-top: 65px;
+  }
+}

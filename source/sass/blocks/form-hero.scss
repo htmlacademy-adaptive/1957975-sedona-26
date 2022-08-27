@@ -1,6 +1,7 @@
-//  <!-- секция Hero каталога -->
-.catalog-hero {
-  background-image: url("../../img/index-background-catalog.jpg");
+
+//   <!-- Приветственная картинка  Фрмы-->
+.form-hero {
+  background-image: url("../img/back-desktop-form.jpg");
   background-repeat: no-repeat;
   padding-top: 52px;
   padding-bottom: 67px;
@@ -8,14 +9,15 @@
   display: block;
 }
 
-.catalog-hero__sedona {
+.form-hero__sedona {
   width: 229px;
   height: 39px;
 }
 
-// планшет
+
+// Планшет
 @media (min-width: $tablet-width) {
-  .catalog-hero {
+  .form-hero {
     background-image: url("../img/Vector.svg"), url("../img/index-background-catalog2.jpg");
     background-repeat: no-repeat, no-repeat;
     padding-top: 95px;
@@ -24,16 +26,17 @@
     background-position-y: bottom;
   }
 
-  .catalog-hero__sedona {
+  .form-hero__sedona {
     width: 456px;
     height: 77px;
   }
 }
 
-// Десктоп
+// десктоп
+
 @media (min-width: $desktop-width) {
-  .catalog-hero {
+  .form-hero {
     background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-desktop-catalog-1200.jpg");
-    width: 100%;
+    width: 1200px;
   }
 }

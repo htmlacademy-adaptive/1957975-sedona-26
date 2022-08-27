@@ -2,6 +2,8 @@
 .button {
   background-color: $light-blue;
   color: $white;
+  border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: $blue;

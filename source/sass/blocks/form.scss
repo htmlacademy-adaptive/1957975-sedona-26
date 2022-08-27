@@ -1,14 +1,13 @@
+.form-wrapper {
+  width: 280px;
+}
+
 .form-group::before {
   content: "";
   background-color: #e5e5e5;
   height: 1px;
   width: 320px;
   display: block;
-  margin-left: -20px;
-}
-
-.form-group {
-  padding: 0 20px;
 }
 
 .form__users {
@@ -46,6 +45,7 @@
 .form-users__item {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .form-users__input {
@@ -77,4 +77,151 @@ input::-webkit-input-placeholder {
   font-size: 18px;
   line-height: 26px;
   padding: 16px;
+}
+
+// кнопка отправить ФОРМУ
+.form-feedback__wrapper {
+  display: flex;
+  flex-direction: column;
+  grid-row-start: 5;
+  grid-column-start: 1;
+  grid-row-end: 6;
+  grid-column-end: 3;
+}
+
+.form-button {
+  font-family: "PT Sans", sans-serif;
+  width: 281px;
+  padding: 18px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.form-feedback__anotation {
+  text-align: end;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  opacity: 0.6;
+  color: $gray;
+}
+
+// Планшет
+@media (min-width: $tablet-width) {
+  .form-wrapper {
+    padding: 0 60px;
+    width: calc(100% - 120px);
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px 0;
+  }
+
+  .form-users {
+    margin-right: 70px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $lighr-gray;
+      width: 1px;
+      height: 100%;
+      top: 0;
+      right: -44px;
+      left: auto;
+    }
+  }
+
+  .form-group {
+    padding: 0;
+    position: relative;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .title-form {
+    font-size: 21px;
+    line-height: 26px;
+    padding: 0;
+    padding-bottom: 28px;
+  }
+
+  .title-form--decor {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 13px;
+      height: 1px;
+      background-color: #e5e5e5;
+      width: 123px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 13px;
+      height: 1px;
+      background-color: #e5e5e5;
+      width: 123px;
+    }
+  }
+
+  .form-users__name {
+    text-align: start;
+  }
+
+  .form-button {
+    margin: 0;
+    width: 324px;
+  }
+
+  .form-feedback__wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .form-feedback__anotation {
+    font-size: 14px;
+  }
+}
+
+// десктоп
+@media (min-width: $desktop-width) {
+  .form-wrapper {
+    padding: 0 120px;
+    width: calc(100% - 240px);
+  }
+
+  .form-users__item {
+    align-items: stretch;
+  }
+
+  .form-users {
+    margin-right: 50px;
+  }
+
+  .title-form--decor {
+    &::before {
+      width: 280px;
+    }
+
+    &::after {
+      width: 280px;
+    }
+  }
+
+  .form {
+    gap: 56px 0;
+  }
 }

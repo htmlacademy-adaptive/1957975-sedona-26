@@ -97,3 +97,11 @@
     width: 520px;
   }
 }
+
+// десктоп
+@media (min-width: $desktop-width) {
+  .description-page {
+    width: 1200px;
+    background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-desktop1200.jpg");
+  }
+}

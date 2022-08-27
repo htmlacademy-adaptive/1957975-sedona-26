@@ -159,6 +159,7 @@
   display: block;
 }
 
+// планшет
 @media (min-width: $tablet-width) {
   .card {
     flex-direction: row;
@@ -228,5 +229,35 @@
   .sup-item__description {
     font-size: 14px;
     line-height: 21px;
+  }
+}
+
+// десктоп
+@media (min-width: $desktop-width) {
+  .advantages {
+    align-items: stretch;
+  }
+
+  .advantages__list {
+    gap: 104px;
+  }
+
+  .advantages__item-home {
+    left: 117px;
+    top: -109px;
+  }
+
+  .advantages__item-eat {
+    left: 117px;
+    top: -109px;
+  }
+
+  .advantages__item-gift {
+    left: 117px;
+    top: -109px;
+  }
+
+  .advantages__sub-list {
+    justify-content: space-between;
   }
 }

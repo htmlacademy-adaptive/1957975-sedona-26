@@ -2,51 +2,23 @@
 .page-catalog {
   width: 280px;
   margin: 0 auto;
-}
-
-.catalog-card__img-warper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.catalog-card-wraper {
-  padding-top: 25px;
-  display: flex;
-  flex-direction: column;
-
-  &::after {
-    content: "";
-    background-color: #e5e5e5;
-    height: 1px;
-    width: 320px;
-    margin-left: -20px;
+// <!-- секция каталога планшет -->
+@media (min-width: $tablet-width) {
+  .page-catalog {
+    padding: 0 60px;
+    width: calc(100% - 120px);
   }
 }
 
-.catalog-card__title {
-  margin: 0;
-  padding-top: 15px;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.catalog-card__text {
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
-  text-transform: none;
-}
-
-.catalog-card__liks {
-  margin: 0;
-  padding-top: 16px;
-  padding-bottom: 25px;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 700;
+// десктоп
+@media (min-width: $desktop-width) {
+  .page-catalog {
+    padding: 0;
+    width: 100%;
+  }
 }

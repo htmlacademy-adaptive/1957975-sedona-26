@@ -32,3 +32,27 @@
   text-transform: uppercase;
   color: #333333;
 }
+
+// Планшет
+@media (min-width: $tablet-width) {
+  .catalog-discription {
+    padding-top: 66px;
+    width: 458px;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .catalog-discription__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+// Десктоп
+@media (min-width: $desktop-width) {
+  .catalog-discription {
+    padding-top: 100px;
+  }
+}

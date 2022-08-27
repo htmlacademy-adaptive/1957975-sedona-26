@@ -27,9 +27,8 @@
 }
 
 .contacts__item-input {
-
   width: 222px;
-  height: 58px;
+  padding: 16px;
   border: none;
   background-color: #f2f2f2;
 
@@ -44,7 +43,9 @@
   }
 
   &:focus {
+    outline-style: auto;
     outline-width: 4px;
+    outline-offset: -1px;
     outline-color: #e5e5e5;
   }
 }
@@ -52,4 +53,28 @@
 .contacts__item-image {
   padding: 20px;
   background-color: #e6e6e6;
+}
+
+// планшет
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding: 0;
+    gap: 0;
+  }
+
+  .contacts__item-contacts {
+    display: flex;
+    padding-top: 16px;
+  }
+}
+
+// десктоп
+@media (min-width: $desktop-width) {
+  .contacts__item-input {
+    width: 100%;
+  }
+
+  .form-contacts {
+    margin-left: 60px;
+  }
 }
