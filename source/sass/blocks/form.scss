@@ -79,7 +79,7 @@ input::-webkit-input-placeholder {
   padding: 16px;
 }
 
-// кнопка отправить ФОРМУ
+// кнопка отправить ОСТАВИТЬ ОТЗЫВ
 .form-feedback__wrapper {
   display: flex;
   flex-direction: column;
@@ -90,7 +90,7 @@ input::-webkit-input-placeholder {
 }
 
 .form-button {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   width: 281px;
   padding: 18px;
   font-weight: 700;
