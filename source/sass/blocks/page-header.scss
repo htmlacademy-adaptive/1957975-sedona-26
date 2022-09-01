@@ -1,39 +1,43 @@
+// лого
 .page-header__logo {
   text-decoration: none;
   position: absolute;
-  top: 0;
+  top: -400px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.navigation {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 320px;
+.navigation__item {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-.navigation__toggle {
-  z-index: 1;
-  position: relative;
-  cursor: pointer;
-  width: 48px;
-  height: 48px;
-  border: none;
-  background-color: inherit;
+.navigation__item:not(:last-child) {
+  margin-bottom: 1px;
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    height: 4px;
-    width: 22px;
-    background: #81b3d2;
-    left: 14px;
-    top: 22px;
-    box-shadow: 0 7px #81b3d2, 0 -7px #82b3d1;
-  }
+.navigation__item:last-child {
+  background: linear-gradient(180deg, rgba(0, 1, 0, 0) 75%, rgba(0, 0, 0, 0.2) 100%);
+  box-shadow: none;
+}
+
+// навигация
+.page-header__navigation {
+  min-height: 56px;
+  min-width: 320px;
+  position: relative;
+}
+
+// кнопка мобильной навигации
+.page-header__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 56px;
+  height: 56px;
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
 
   &:hover {
     opacity: 0.6;
@@ -44,28 +48,58 @@
   }
 }
 
-.navigation__toggle--cross {
-  background-image: url("../img/icon-cross.svg");
+.page-header__navigation--closed .page-header__toggle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 26px;
+  height: 4px;
+  width: 22px;
+  background-color: $light-blue;
+  box-shadow: 0 7px $light-blue, 0 -7px $light-blue;
+}
+
+// кнопка при откртытом состоянии меню (крестик)
+.page-header__navigation--opened .page-header__toggle {
+  &::before,
+  &::after {
+    content: "";
+    top: 24px;
+    left: 18px;
+    width: 28px;
+    height: 4px;
+    background-color: $white;
+    display: block;
+    position: absolute;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $white;
+  }
+}
+
+.page-header__navigation--closed .navigation__list--closed {
+  display: none;
 }
 
 .navigation__list {
-  display: none;
-  width: 320px;
+  width: 100%;
+  min-width: 320px;
   list-style: none;
   margin: 0;
   padding: 0;
   background-color: $light-blue;
-  position: absolute;
-  top: 0;
-}
-
-.navigation__list--opend {
-  display: block;
-}
-
-.navigation__item {
-  box-shadow: 0 1px 0 rgb(1 1 1 / 20%),
-    inset 0 1px 0 rgb(255 255 255 / 20%);
 }
 
 .navigation__link {
@@ -80,13 +114,9 @@
   padding: 17px 0 12px;
 }
 
-.navigation__list:last-child() {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.2) 100%);
-}
-
 // паншетная версия
 @media (min-width: $tablet-width) {
-  .navigation__toggle {
+  .page-header__toggle {
     display: none;
   }
 
@@ -95,13 +125,14 @@
     position: absolute;
   }
 
-  .navigation {
+  .page-header__navigation {
     text-align: center;
     position: static;
     width: 768px;
   }
 
   .navigation__list {
+    min-height: 56px;
     position: inherit;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -119,7 +150,6 @@
   }
 
   .navigation__link {
-    padding: 18px auto 17px;
     color: $black;
     font-size: 14px;
     line-height: 21px;
@@ -143,13 +173,12 @@
 }
 
 // ДЕсктоп
-
 @media (min-width: $desktop-width) {
   .navigation__list {
     width: 1200px;
   }
 
-  .navigation {
+  .page-header__navigation {
     width: 1200px;
   }
 
