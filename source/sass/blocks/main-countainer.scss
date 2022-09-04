@@ -13,9 +13,16 @@
   align-items: center;
   background-image: url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position: center -30px;
   background-color: $light-blue;
   min-width: inherit;
+}
+
+@media (min-resolution: 2dppx) {
+  .description-page {
+    background-image: url("../img/back-desktop@2x.jpg");
+    background-size: 1260px auto;
+  }
 }
 
 .description-page__img-description__warper {
@@ -81,6 +88,12 @@
     background-position-y: bottom;
   }
 
+  @media (min-resolution: 2dppx) {
+    .description-page {
+      background-image: url("../img/Vector.svg"), url("../img/back-desktop@2x.jpg");
+    }
+  }
+
   .description-page__warperr-text {
     width: auto;
     display: flex;
@@ -102,6 +115,13 @@
 @media (min-width: $desktop-width) {
   .description-page {
     width: 1200px;
-    background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-desktop1200.jpg");
+    background-image: url("../img/intro-triangle-desktop.svg"), url("../../img/back-desktop.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .description-page {
+      background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-desktop@2x.jpg");
+      background-size: 1260px auto;
+    }
   }
 }

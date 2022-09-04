@@ -1,11 +1,21 @@
 //  <!-- секция Hero каталога -->
 .catalog-hero {
-  background-image: url("../../img/index-background-catalog.jpg");
-  background-repeat: no-repeat;
+  background-color: $light-blue;
+  background-image: url("../img/Vector.svg"), url("../img/back-catalog-mobil.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, bottom;
   padding-top: 52px;
   padding-bottom: 67px;
   text-align: center;
   display: block;
+  width: 100%;
+}
+
+@media (min-resolution: 2dppx) {
+  .catalog-hero {
+    background-image: url("../img/Vector.svg"), url("../img/back-catalog-mobil@2x.jpg");
+    background-size: 100%;
+  }
 }
 
 .catalog-hero__sedona {
@@ -16,12 +26,19 @@
 // планшет
 @media (min-width: $tablet-width) {
   .catalog-hero {
-    background-image: url("../img/Vector.svg"), url("../img/index-background-catalog2.jpg");
+    background-image: url("../img/Vector.svg"), url("../img/back-catalog-tablet.jpg");
     background-repeat: no-repeat, no-repeat;
+    background-position-y: bottom;
     padding-top: 95px;
     padding-bottom: 114px;
     width: 768px;
-    background-position-y: bottom;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .catalog-hero {
+      background-image: url("../img/Vector.svg"), url("../img/back-catalog-tablet@2x.jpg");
+      background-size: 100%;
+    }
   }
 
   .catalog-hero__sedona {
@@ -33,7 +50,14 @@
 // Десктоп
 @media (min-width: $desktop-width) {
   .catalog-hero {
-    background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-desktop-catalog-1200.jpg");
+    background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-catalog-desktop.jpg");
     width: 100%;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .catalog-hero {
+      background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-catalog-desktop@2x.jpg");
+      background-size: 100%;
+    }
   }
 }
