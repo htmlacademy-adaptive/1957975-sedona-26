@@ -1,7 +1,7 @@
 //  <!-- секция Hero каталога -->
 .catalog-hero {
   background-color: $light-blue;
-  background-image: url("../img/Vector.svg"), url("../img/back-catalog-mobil.jpg");
+  background-image: url("../img/vector.svg"), url("../img/back-catalog-mobil.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, bottom;
   padding-top: 52px;
@@ -13,7 +13,7 @@
 
 @media (min-resolution: 2dppx) {
   .catalog-hero {
-    background-image: url("../img/Vector.svg"), url("../img/back-catalog-mobil@2x.jpg");
+    background-image: url("../img/vector.svg"), url("../img/back-catalog-mobil@2x.jpg");
     background-size: 100%;
   }
 }

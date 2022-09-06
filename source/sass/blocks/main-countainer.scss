@@ -11,16 +11,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../img/back-desktop.jpg");
-  background-repeat: no-repeat;
-  background-position: center -30px;
+  background-image: url("../img/vector.svg"), url("../img/back-desktop.jpg");
+  background-repeat: no-repeat, no-repeat;
   background-color: $light-blue;
+  background-position: bottom center, center -34px;
   min-width: inherit;
+  width: 320px;
 }
 
 @media (min-resolution: 2dppx) {
   .description-page {
-    background-image: url("../img/back-desktop@2x.jpg");
+    background-image: url("../img/vector.svg"), url("../img/back-desktop@2x.jpg");
     background-size: 1260px auto;
   }
 }
@@ -82,7 +83,7 @@
   }
 
   .description-page {
-    background-image: url("../img/Vector.svg"), url("../img/back-desktop.jpg");
+    background-image: url("../img/vector.svg"), url("../img/back-desktop.jpg");
     background-repeat: no-repeat, no-repeat;
     width: 768px;
     background-position-y: bottom;
@@ -90,7 +91,7 @@
 
   @media (min-resolution: 2dppx) {
     .description-page {
-      background-image: url("../img/Vector.svg"), url("../img/back-desktop@2x.jpg");
+      background-image: url("../img/vector.svg"), url("../img/back-desktop@2x.jpg");
     }
   }
 

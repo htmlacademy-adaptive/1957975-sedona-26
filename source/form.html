@@ -163,22 +163,27 @@
     </section>
 
 
-
-    <div class="modal-form-error">
-      <div class="modal-form-error__wrapper">
-        <p class="modal-form-error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
-        <p class="modal-form-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <!-- скрыть окно modal-error-wrapper--closed -->
+    <div class="modal-error-wrapper modal-error-wrapper--closed">
+      <div class="modal-form-error">
+        <div class="modal-form-error__wrapper">
+          <p class="modal-form-error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
+          <p class="modal-form-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        </div>
+        <input class="modal-form-error__button button" type="button" value="Ок">
       </div>
-      <input class="modal-form-error__button button" type="button" value="Ок">
     </div>
 
-    <div class="modal-form-completed">
-      <div class="modal-form-completed__wrapper">
-        <p class="modal-form-completed__title">Ваш отзыв отправлен!</p>
-        <p class="modal-form-completed__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
-      </div>
-      <div class="modal-form-completed__input-wrapper">
-        <input class="modal-form-completed__button button" type="button" value="Закрыть окно">
+    <!-- скрыть окно modal-wrapper--closed-->
+    <div class="modal-completed-wrapper modal-completed-wrapper--closed">
+      <div class="modal-form-completed">
+        <div class="modal-form-completed__wrapper">
+          <p class="modal-form-completed__title">Ваш отзыв отправлен!</p>
+          <p class="modal-form-completed__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <div class="modal-form-completed__input-wrapper">
+          <input class="modal-form-completed__button button" type="button" value="Закрыть окно">
+        </div>
       </div>
     </div>
 
