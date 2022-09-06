@@ -166,12 +166,12 @@
   }
 
   .card__warper {
-    padding: 40px 32px 43px;
-    flex-grow: 1;
+    padding: 33px 32px 43px;
   }
 
-  .card__img {
-    flex-grow: 2;
+  .card__img-wrapper {
+    flex-grow: 1;
+    flex-shrink: 0;
   }
 
   // <!-- блок с описанием преимуществ №1  -->

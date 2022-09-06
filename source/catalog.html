@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="../32.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/32.svg"type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Седона catalog</title>
 </head>
 <body class="page__body">
@@ -64,7 +67,11 @@
 
         <div class="catalog-card-wraper catalog-card catalog-card-main">
           <div class="catalog-card__img-warper catalog-card-main__img-wraper">
-            <img class="catalog-card__img catalog-card-main__img" src="img/catalog/photo-1-desktop1200.jpg" alt="неродные просторы фото" width="280" height="280">
+            <picture>
+              <source media="(min-width:1200px" srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
+              <img class="catalog-card__img catalog-card-main__img" src="img/catalog/photo-1-mobile.jpg" srcset="img/catalog/photo-1-mobile@2x.jpg 2x" alt="неродные просторы фото" width="280" height="280">
+            </picture>
           </div>
           <div class="catalog-card__content">
             <p class="catalog-card__title">неродные просторы <br>
@@ -72,7 +79,7 @@
             </p>
             <p class="catalog-card__liks">
               <svg class="catalog-card__liks-svg" width="23" height="21" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"/></svg>
+              <path opacity="0.3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"/></svg>
               1350
             </p>
           </div>
@@ -80,7 +87,11 @@
 
         <div class="catalog-card-wraper catalog-card">
           <div class="catalog-card__img-warper">
-            <img class="catalog-card__img" src="img/catalog/photo-2-mobile.jpg" alt="Местная растительность фото" width="280" height="280">
+            <picture>
+              <source media="(min-width:1200px" srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
+              <img class="catalog-card__img" src="img/catalog/photo-2-mobile.jpg" srcset="img/catalog/photo-2-mobile@2x.jpg 2x" alt="Местная растительность фото" width="280" height="280">
+            </picture>
           </div>
           <div class="catalog-card__content">
             <p class="catalog-card__title">Местная растительность<br>
@@ -95,7 +106,11 @@
 
         <div class="catalog-card-wraper catalog-card">
           <div class="catalog-card__img-warper">
-            <img class="catalog-card__img" src="img/catalog/photo-3-mobile.jpg" alt="Дорога на север фото" width="280" height="280">
+            <picture>
+              <source media="(min-width:1200px" srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
+              <img class="catalog-card__img" src="img/catalog/photo-3-mobile.jpg" srcset="img/catalog/photo-3-mobile@2x.jpg 2x" alt="Дорога на север фото" width="280" height="280">
+            </picture>
           </div>
           <div class="catalog-card__content">
             <p class="catalog-card__title">Дорога на север<br>
@@ -110,7 +125,11 @@
 
         <div class="catalog-card-wraper catalog-card">
           <div class="catalog-card__img-warper">
-            <img class="catalog-card__img" src="img/catalog/photo-4-mobile.jpg" alt="Мост дьявола фото" width="280" height="280">
+            <picture>
+              <source media="(min-width:1200px" srcset="img/catalog/photo-4-desktop.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/photo-4-tablet.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x">
+              <img class="catalog-card__img" src="img/catalog/photo-4-mobile.jpg" srcset="img/catalog/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола фото" width="280" height="280">
+            </picture>
           </div>
           <div class="catalog-card__content">
               <p class="catalog-card__title">Мост дьявола<br>

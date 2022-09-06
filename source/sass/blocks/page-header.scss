@@ -149,6 +149,10 @@
     grid-column: 4 / 5;
   }
 
+  .navigation__item:last-child {
+    background: none;
+  }
+
   .navigation__link {
     color: $black;
     font-size: 14px;

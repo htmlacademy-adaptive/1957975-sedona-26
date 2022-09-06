@@ -63,6 +63,10 @@
     height: 400px;
   }
 
+  .catalog-card__img {
+    width: 100%;
+  }
+
   .catalog-card-wraper::after {
     content: none;
   }
