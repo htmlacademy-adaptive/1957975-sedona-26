@@ -34,10 +34,12 @@
 
   &:hover {
     background-color: $blue;
+    fill-opacity: 0.3;
   }
 
   &:active {
     background-color: $darck-blue;
+    fill-opacity: 0.3;
   }
 }
 
@@ -49,6 +51,9 @@
   height: 48px;
 }
 
+.social_img {
+  fill: $white;
+}
 
 // <!-- копирайт -->
 .page-footer__htmlacademy {
