@@ -49,13 +49,14 @@
 }
 
 .description-page__title {
+  width: 265px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 39px;
+  padding-top: 34px;
 }
 
 .description-page__text {
@@ -64,7 +65,7 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
-  margin: 15px 0 0 0;
+  margin: 36px 0 0 0;
   padding-bottom: 53px;
 }
 
@@ -105,10 +106,12 @@
     font-size: 21px;
     line-height: 26px;
     width: 520px;
+    padding-top: 48px;
   }
 
   .description-page__text {
     width: 520px;
+    margin: 30px 0 0 0;
   }
 }
 
@@ -124,5 +127,9 @@
       background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-desktop@2x.jpg");
       background-size: 1260px auto;
     }
+  }
+
+  .description-page__title {
+    padding-top: 64px;
   }
 }

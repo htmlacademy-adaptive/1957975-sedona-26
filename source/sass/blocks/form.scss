@@ -6,7 +6,6 @@
   content: "";
   background-color: #e5e5e5;
   height: 1px;
-  width: 320px;
   display: block;
 }
 
@@ -22,7 +21,7 @@
 
 .title-form {
   margin: 0;
-  padding-top: 24px;
+  padding-top: 26px;
   padding-bottom: 4px;
   text-align: center;
 
@@ -49,6 +48,7 @@
 }
 
 .form-users__input {
+  font-family: inherit;
   padding: 16px;
   background-color: #f2f2f2;
   font-weight: 700;
@@ -92,7 +92,7 @@ input::-webkit-input-placeholder {
 .form-button {
   font-family: inherit;
   width: 281px;
-  padding: 18px;
+  padding: 16px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -101,6 +101,7 @@ input::-webkit-input-placeholder {
 }
 
 .form-feedback__anotation {
+  font-family: "PT Sans", "Tahoma", sans-serif;
   text-align: end;
   font-weight: 400;
   font-size: 12px;
@@ -123,7 +124,6 @@ input::-webkit-input-placeholder {
   }
 
   .form-users {
-    margin-right: 70px;
     position: relative;
 
     &::after {
@@ -133,7 +133,7 @@ input::-webkit-input-placeholder {
       width: 1px;
       height: 100%;
       top: 0;
-      right: -44px;
+      right: 0;
       left: auto;
     }
   }
@@ -151,15 +151,23 @@ input::-webkit-input-placeholder {
     font-size: 21px;
     line-height: 26px;
     padding: 0;
-    padding-bottom: 28px;
+    padding-bottom: 15px;
+    position: relative;
+  }
+
+  .form-choice__title {
+    padding-top: 12px;
+    width: 308px;
+    margin: 0 auto;
+    position: relative;
   }
 
   .title-form--decor {
     &::before {
       content: "";
       position: absolute;
-      left: 0;
-      top: 13px;
+      left: -66%;
+      top: 50%;
       height: 1px;
       background-color: #e5e5e5;
       width: 123px;
@@ -168,12 +176,20 @@ input::-webkit-input-placeholder {
     &::after {
       content: "";
       position: absolute;
-      right: 0;
-      top: 13px;
+      right: -144px;
+      top: 50%;
       height: 1px;
       background-color: #e5e5e5;
       width: 123px;
     }
+  }
+
+  .form-users__input {
+    min-width: 248px;
+  }
+
+  .contacts__item-input {
+    margin-left: 40px;
   }
 
   .form-users__name {
@@ -223,5 +239,9 @@ input::-webkit-input-placeholder {
 
   .form {
     gap: 56px 0;
+  }
+
+  .form-users::after {
+    right: -80px;
   }
 }

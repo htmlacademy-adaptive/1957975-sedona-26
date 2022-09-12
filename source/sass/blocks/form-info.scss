@@ -47,6 +47,10 @@
 // десктоп
 @media (min-width: $desktop-width) {
   .form-info {
-    padding: 115px 0 66px;
+    padding: 130px 0 66px;
+  }
+
+  .form-info__text {
+    padding-top: 30px;
   }
 }

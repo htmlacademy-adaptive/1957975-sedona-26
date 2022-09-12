@@ -5,13 +5,17 @@
   align-items: center;
 }
 
+.page-footer__form {
+  padding-top: 25px;
+}
+
 .page-footer__social {
   padding-top: 33px;
 }
 
 .page-footer__title {
   margin: 0;
-  padding-top: 39px;
+  padding-top: 30px;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
@@ -57,7 +61,7 @@
 
 // <!-- копирайт -->
 .page-footer__htmlacademy {
-  padding-top: 40px;
+  padding-top: 36px;
   padding-bottom: 25px;
 }
 
@@ -66,6 +70,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  text-transform: uppercase;
 }
 
 .page-footer__htmlacademy-link {
@@ -89,9 +94,10 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     padding: 36px 0;
+    padding-top: 85px;
     flex-direction: row;
     justify-content: space-between;
-    width: 662px;
+    width: 648px;
   }
 
   .page-footer__title {
@@ -111,5 +117,6 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     width: 975px;
+    padding: 43px 0;
   }
 }

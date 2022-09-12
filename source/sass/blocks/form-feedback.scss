@@ -2,10 +2,29 @@
 
 .form-feedback-area {
   padding: 16px;
+  margin-top: 17px;
   border: none;
   outline: none;
   background-color: #f2f2f2;
   resize: none;
+  width: 245px;
+  height: 118px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form-feedback {
+  padding-bottom: 52px;
+}
+
+textarea::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 // Планшет
@@ -15,9 +34,21 @@
     grid-column-start: 1;
     grid-row-end: 5;
     grid-column-end: 3;
+    padding-bottom: 0;
   }
 
   .form-feedback-area {
     width: 648px;
+  }
+
+  .form-feedback__title {
+    margin-top: -30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-feedback-area {
+    width: 768px;
+    display: block;
   }
 }

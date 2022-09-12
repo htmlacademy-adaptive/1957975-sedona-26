@@ -65,8 +65,8 @@
   &::before,
   &::after {
     content: "";
-    top: 24px;
-    left: 18px;
+    top: 26px;
+    left: 12px;
     width: 28px;
     height: 4px;
     background-color: $white;
@@ -123,6 +123,7 @@
   .page-header__logo {
     z-index: 1;
     position: absolute;
+    top: 0;
   }
 
   .page-header__navigation {
