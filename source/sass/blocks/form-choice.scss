@@ -1,6 +1,7 @@
 // <!-- общее впечатление  -->
 .form-choice {
   padding-bottom: 24px;
+  padding-top: 10px;
 }
 
 .form-choice__list {
@@ -12,7 +13,7 @@
 }
 
 .form-choice__item {
-  padding: 10px 0;
+  padding-top: 25px;
 }
 
 .radio {
@@ -63,6 +64,14 @@
     grid-template-columns: 1fr 1fr;
     width: 575px;
     margin: 0 auto;
-    text-align: left;
+  }
+}
+
+// desktop
+
+@media (min-width: $desktop-width) {
+  .form-choice__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: auto;
   }
 }
