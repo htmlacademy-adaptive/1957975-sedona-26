@@ -98,10 +98,6 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
-// export default gulp.series(
-//   copyImages, optimizeImages, html, styles, server, watcher
-// );
-
 export const build = gulp.series (
   clean,
   copy,
@@ -109,7 +105,6 @@ export const build = gulp.series (
   gulp.parallel(
     styles,
     html,
-    svgo,
     sprite,
   ),
 );
@@ -123,7 +118,6 @@ export default gulp.series (
   gulp.parallel (
     styles,
     html,
-    svgo,
     sprite,
   ),
   gulp.series(
