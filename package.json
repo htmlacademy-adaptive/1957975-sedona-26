@@ -24,8 +24,8 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
-    "start": "npx gulp"
+    "build": "gulp build",
+    "start": "gulp"
   },
   "browserslist": [
     "last 2 versions",

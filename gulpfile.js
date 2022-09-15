@@ -47,29 +47,27 @@ const copyImages = () => {
 }
 
 //SWG
-gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
-.pipe(svgo())
-.pipe(gulp.dest('build/img'));
+const svg = () => {
+  return gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+    .pipe(svgo())
+    .pipe(gulp.dest('build/img'));
+}
 
 const sprite = () => {
-return gulp.src('source/img/sprites/*.svg')
-.pipe(svgo())
-.pipe(svgstore({
-inlineSvg: true
-}))
-.pipe(rename('sprite.svg'))
-.pipe(gulp.dest('build/img'));
+  return gulp.src('source/img/sprites/*.svg')
+    .pipe(svgo())
+    .pipe(svgstore({inlineSvg: true}))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'));
 }
 
 //copy
 const copy = (done) => {
   gulp.src([
-  'source/fonts/*.{woff2,woff}',
-  'source/*.ico',
-  'source/*.webmanifest',
-  ], {
-  base: 'source'
-  })
+    'source/fonts/*.{woff2,woff}',
+    'source/*.ico',
+    'source/*.webmanifest',
+  ], {base: 'source'})
   .pipe(gulp.dest('build'))
   done();
 }
@@ -103,6 +101,7 @@ export const build = gulp.series (
   copy,
   optimizeImages,
   gulp.parallel(
+    svg,
     styles,
     html,
     sprite,
@@ -116,11 +115,13 @@ export default gulp.series (
   copy,
   copyImages,
   gulp.parallel (
+    svg,
     styles,
     html,
     sprite,
   ),
   gulp.series(
-  server,
-  watcher
-));
+    server,
+    watcher
+  )
+);
