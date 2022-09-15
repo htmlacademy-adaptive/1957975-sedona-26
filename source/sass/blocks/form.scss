@@ -219,6 +219,10 @@ input::-webkit-input-placeholder {
     width: calc(100% - 240px);
   }
 
+  .form-choice__title {
+    width: auto;
+  }
+
   .form-users__item {
     align-items: stretch;
   }
@@ -230,10 +234,14 @@ input::-webkit-input-placeholder {
   .title-form--decor {
     &::before {
       width: 280px;
+      left: 0;
+      top: 45%;
     }
 
     &::after {
       width: 280px;
+      right: 0;
+      top: 45%;
     }
   }
 

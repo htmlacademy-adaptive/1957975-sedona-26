@@ -108,7 +108,7 @@
 .advantages__sub-list {
   list-style-type: none;
   margin: 0;
-  padding: 21px 39px;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -121,6 +121,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding-top: 27px;
 }
 
 .sup-item:not(:last-child)::after {

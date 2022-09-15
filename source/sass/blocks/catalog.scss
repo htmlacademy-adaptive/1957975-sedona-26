@@ -15,7 +15,6 @@
     background-color: #e5e5e5;
     height: 1px;
     width: 320px;
-    margin-left: -20px;
   }
 }
 
@@ -52,6 +51,11 @@
   padding-left: 20px;
 }
 
+.catalog-card__liks-svg {
+  fill: $black;
+  fill-opacity: 0.3;
+}
+
 // Планшет
 @media (min-width: $tablet-width) {
   .catalog {
@@ -72,6 +76,7 @@
 
   .catalog-card__liks {
     padding-top: 0;
+    padding-bottom: 0;
   }
 
   .catalog-card-main {

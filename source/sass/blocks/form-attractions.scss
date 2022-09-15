@@ -98,10 +98,11 @@
 .form-attractions__checkbox:checked + .checkbox::after {
   content: "";
 }
+
 // десктоп
 @media (min-width: $desktop-width) {
   .form-attractions__title {
-    width: 308px;
+    width: auto;
     margin: 0 auto;
   }
 
