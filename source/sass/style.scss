@@ -8,10 +8,10 @@
 // Стиль кнопок
 @import "button.scss";
 
+// шрифты
+@import "fonts.scss";
 // гломальные стили для страницы
 @import "blocks/page.scss";
-// шрифты
-@import "blocks/fonts.scss";
 // шапка сайта
 @import "blocks/page-header.scss";
 @import "blocks/main-countainer.scss";
@@ -38,6 +38,7 @@
 @import "blocks/form-feedback.scss";
 // скрытие контента
 @import "blocks/visually-hidden.scss";
+
 // Модальные окна
 // Модкалка собообщение об Ошибка
 @import "blocks/modal-form-error.scss";
