@@ -4,6 +4,7 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
+import terser from 'gulp-terser';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
@@ -30,8 +31,16 @@ const styles = () => {
 // HTML
 const html = () => {
   return gulp.src('source/*.html')
-  .pipe(htmlmin({ collapseWhitespace: true }))
-  .pipe(gulp.dest('build'));
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+}
+
+// Scripts
+
+const scripts = () => {
+  return gulp.src('source/js/*.js')
+    .pipe(gulp.dest('build/js'))
+    .pipe(browser.stream());
 }
 
 //images
@@ -43,16 +52,16 @@ const optimizeImages = () => {
 
 const copyImages = () => {
   return gulp.src('source/img/**/*.{png,jpg,webp}')
-  .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('build/img'))
 }
 
 // WebP
 const createWebp = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
-  .pipe(squoosh({
-    webp:{}
-  }))
-  .pipe(gulp.dest('build/img'))
+    .pipe(squoosh({
+      webp:{}
+    }))
+    .pipe(gulp.dest('build/img'))
 }
 
 //SWG
@@ -122,6 +131,7 @@ export const build = gulp.series (
     createWebp,
     styles,
     html,
+    scripts,
     sprite,
   ),
 );
@@ -136,6 +146,7 @@ export default gulp.series (
     styles,
     html,
     svg,
+    scripts,
     sprite,
     createWebp
   ),

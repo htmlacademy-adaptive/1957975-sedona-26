@@ -1,20 +1,19 @@
 //  <!-- секция с промо роликом -->
-
-.page_promo {
+.promo {
   display: grid;
   justify-items: center;
   justify-content: center;
 }
 
-.promo__discription {
-  padding-top: 14px;
+.promo__description {
+  padding-top: 9px;
   width: 266px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.promo-discription__title {
+.promo__description-title {
   margin: 0;
   font-weight: 700;
   font-size: 18px;
@@ -22,7 +21,7 @@
   text-transform: uppercase;
 }
 
-.promo-discription__text {
+.promo__description-text {
   margin: 0;
   margin-top: 7px;
   text-align: center;
@@ -34,53 +33,92 @@
 }
 
 .promo__video {
-  padding-top: 38px;
-  border: none;
+  margin-top: 38px;
+  position: relative;
 }
 
+.promo__video-img {
+  width: auto;
+}
+
+.promo__video-button-play {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  border: none;
+  width: 0;
+  height: 0;
+}
+
+.promo__video-button-play-img {
+  position: absolute;
+  left: 120px;
+  top: 69px;
+}
 
 // Планшет
-
 @media (min-width: $tablet-width) {
-  .page_promo {
-    padding-bottom: 40px;
+  .promo {
+    padding-bottom: 12px;
   }
 
-  .promo__discription {
+  .promo__description {
     width: 445px;
-    padding-top: 57px;
+    padding-top: 73px;
   }
 
-  .promo-discription__title {
-
+  .promo__description-title {
     font-size: 30px;
     line-height: 26px;
   }
 
   .promo__video {
+    margin-top: 65px;
+  }
+
+  .promo__description-text {
+    margin: 12px 0 0;
+  }
+
+  .promo__video-button-play-img {
+    left: 297px;
+    top: 249px;
+  }
+
+  .promo__video-img {
     width: 648px;
     height: 500px;
-    padding-top: 65px;
+    padding-top: 22px;
   }
 }
 
+// desktop
 @media (min-width: $desktop-width) {
-  .promo__discription {
+  .promo__description {
     width: 445px;
     padding-top: 66px;
   }
 
-  .promo-discription__text {
+  .promo__description-text {
     margin-top: 10px;
   }
 
   .promo__video {
-    width: 800px;
-    height: 500px;
-    padding-top: 89px;
+    padding-top: 3px;
   }
 
-  .page_promo {
+  .promo__video-button-play-img {
+    left: 375px;
+    top: 252px;
+  }
+
+  .promo__video-img {
+    width: 800px;
+    height: 500px;
+  }
+
+  .promo {
     padding-bottom: 79px;
   }
 }

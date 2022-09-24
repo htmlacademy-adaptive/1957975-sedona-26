@@ -21,7 +21,7 @@
 
 .title-form {
   margin: 0;
-  padding-top: 26px;
+  padding-top: 25px;
   padding-bottom: 4px;
   text-align: center;
 
@@ -55,6 +55,7 @@
   font-size: 18px;
   line-height: 26px;
   border: none;
+  width: 240px;
 
   &:hover {
     background-color: #e5e5e5;
@@ -80,7 +81,7 @@ input::-webkit-input-placeholder {
 }
 
 // кнопка отправить ОСТАВИТЬ ОТЗЫВ
-.form-feedback__wrapper {
+.form__wrapper-button-send {
   display: flex;
   flex-direction: column;
   grid-row-start: 5;
@@ -89,7 +90,7 @@ input::-webkit-input-placeholder {
   grid-column-end: 3;
 }
 
-.form-button {
+.form__button {
   font-family: inherit;
   width: 281px;
   padding: 16px;
@@ -100,7 +101,7 @@ input::-webkit-input-placeholder {
   margin: 0 auto;
 }
 
-.form-feedback__anotation {
+.form__button-anotation {
   font-family: "PT Sans", "Tahoma", sans-serif;
   text-align: end;
   font-weight: 400;
@@ -120,7 +121,7 @@ input::-webkit-input-placeholder {
   .form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 48px 0;
+    gap: 37px 0;
   }
 
   .form-users {
@@ -140,6 +141,7 @@ input::-webkit-input-placeholder {
 
   .form-group {
     padding: 0;
+    padding-left: 30px;
     position: relative;
 
     &::before {
@@ -156,7 +158,6 @@ input::-webkit-input-placeholder {
   }
 
   .form-choice__title {
-    padding-top: 12px;
     width: 308px;
     margin: 0 auto;
     position: relative;
@@ -166,7 +167,7 @@ input::-webkit-input-placeholder {
     &::before {
       content: "";
       position: absolute;
-      left: -66%;
+      left: -54%;
       top: 50%;
       height: 1px;
       background-color: #e5e5e5;
@@ -176,7 +177,7 @@ input::-webkit-input-placeholder {
     &::after {
       content: "";
       position: absolute;
-      right: -144px;
+      right: -173px;
       top: 50%;
       height: 1px;
       background-color: #e5e5e5;
@@ -196,19 +197,22 @@ input::-webkit-input-placeholder {
     text-align: start;
   }
 
-  .form-button {
+  .form__button {
     margin: 0;
     width: 324px;
   }
 
-  .form-feedback__wrapper {
+  .form__wrapper-button-send {
+    padding: 16px 0 33px 0;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
 
-  .form-feedback__anotation {
+  .form__button-anotation {
+    font-weight: 400;
     font-size: 14px;
+    line-height: 21px;
   }
 }
 
@@ -216,7 +220,7 @@ input::-webkit-input-placeholder {
 @media (min-width: $desktop-width) {
   .form-wrapper {
     padding: 0 120px;
-    width: calc(100% - 240px);
+    width: calc(100% - 205px);
   }
 
   .form-choice__title {
@@ -227,8 +231,13 @@ input::-webkit-input-placeholder {
     align-items: stretch;
   }
 
-  .form-users {
-    margin-right: 50px;
+  .form-users__input {
+    min-width: 398px;
+  }
+
+  .form-users__name {
+    padding-left: 27px;
+    padding-top: 13px;
   }
 
   .title-form--decor {
@@ -250,6 +259,18 @@ input::-webkit-input-placeholder {
   }
 
   .form-users::after {
-    right: -80px;
+    right: -28px;
+  }
+
+  .form__users.form-users.form-group {
+    padding-left: 30px;
+  }
+
+  .form-group {
+    padding: 0;
+  }
+
+  .form__button {
+    width: 384px;
   }
 }

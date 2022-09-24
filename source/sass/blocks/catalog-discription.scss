@@ -1,6 +1,6 @@
 //   <!-- описани каталога -->
-.catalog-discription {
-  padding-top: 30px;
+.catalog-description {
+  padding-top: 38px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,17 +15,17 @@
   }
 }
 
-.catalog-discription__title {
+.catalog-description__title {
   margin: 0;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
 }
 
-.catalog-discription__text {
+.catalog-description__text {
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 25px;
+  padding-top: 26px;
+  padding-bottom: 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -35,7 +35,7 @@
 
 // Планшет
 @media (min-width: $tablet-width) {
-  .catalog-discription {
+  .catalog-description {
     padding-top: 66px;
     width: 458px;
 
@@ -44,19 +44,23 @@
     }
   }
 
-  .catalog-discription__title {
+  .catalog-description__title {
     font-size: 30px;
     line-height: 26px;
+  }
+
+  .catalog-description__text {
+    padding-top: 33px;
   }
 }
 
 // Десктоп
 @media (min-width: $desktop-width) {
-  .catalog-discription {
+  .catalog-description {
     padding-top: 100px;
   }
 
-  .catalog-discription__text {
-    padding-bottom: 91px;
+  .catalog-description__text {
+    padding-bottom: 87px;
   }
 }

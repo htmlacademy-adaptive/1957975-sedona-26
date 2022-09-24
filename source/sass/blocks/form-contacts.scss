@@ -1,23 +1,18 @@
 // <!-- контакты для обратной свзяи -->
-.form-conatcts__contacts-list {
+.form-contacts__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.contacts__item {
+.form-contacts__item {
   text-align: initial;
-}
-
-.contacts {
   padding-top: 14px;
-  padding-bottom: 20px;
   display: grid;
   grid-template-columns: auto;
-  gap: 16px;
 }
 
-.contacts__item-contacts {
+.form-contacts__item-contacts {
   padding-left: 16px;
   font-weight: 400;
   font-size: 14px;
@@ -26,15 +21,14 @@
   text-transform: uppercase;
 }
 
-.item-contacts__wrapper {
+.form-contacts__wrapper {
   display: flex;
 }
 
-.contacts__item-input {
+.form-contacts__item-input {
   font-family: inherit;
   width: 222px;
   padding: 16px;
-  padding-left: 10px;
   border: none;
   background-color: #f2f2f2;
 
@@ -60,32 +54,58 @@
   }
 }
 
-.contacts__item-image {
+.form-contacts__item-image {
   padding: 20px;
   background-color: #e6e6e6;
 }
 
 // планшет
 @media (min-width: $tablet-width) {
-  .contacts {
+  .form-contacts__wrapper {
+    justify-content: flex-end;
+  }
+
+  .form-contacts__list {
     padding: 0;
     gap: 0;
   }
 
-  .contacts__item-contacts {
+  .form-contacts__item-contacts {
     display: flex;
     padding-top: 16px;
-    padding-left: 65px;
+    padding-left: 60px;
+  }
+
+  .form-contacts__item {
+    padding-top: 0;
+  }
+
+  .form-contacts__item-input {
+    width: 189px;
+  }
+
+  .form-contacts__item-input::placeholder {
+    padding: 0;
   }
 }
 
 // десктоп
 @media (min-width: $desktop-width) {
-  .contacts__item-input {
+  .form-contacts__item-input {
     width: 100%;
   }
 
   .form-contacts {
-    margin-left: 60px;
+    margin-left: 63px;
+  }
+
+  .form-contacts__item-contacts {
+
+    padding-top: 12px;
+    padding-left: 18px;
+  }
+
+  .form-contacts__list.contacts {
+    padding-left: 30px;
   }
 }

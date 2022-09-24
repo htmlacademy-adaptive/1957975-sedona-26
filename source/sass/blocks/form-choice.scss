@@ -1,7 +1,7 @@
 // <!-- общее впечатление  -->
 .form-choice {
   padding-bottom: 24px;
-  padding-top: 10px;
+  padding-top: 32px;
 }
 
 .form-choice__list {
@@ -33,7 +33,7 @@
   height: 46px;
   left: -53px;
   top: -12px;
-  background-color: #f2f2f2;
+  background-color: $soft-gray;
   border-radius: 50%;
 }
 
@@ -47,9 +47,22 @@
   background-color: $gray;
 }
 
+.radio:hover::before {
+  background-color: $hover-gray;
+}
+
+.radio:active::before {
+  background-color: $active-gray;
+}
+
+.radio:active::after {
+  opacity: 0.3;
+}
+
 .form-choice__input:checked + .radio::after {
   content: "";
 }
+
 // планщет
 @media (min-width: $tablet-width) {
   .form-choice {
@@ -65,13 +78,42 @@
     width: 575px;
     margin: 0 auto;
   }
+
+  .form-choice__item {
+    padding-left: 40px;
+  }
+
+  .radio::after {
+    left: -47px;
+  }
+
+  .radio::before {
+    left: -64px;
+  }
 }
 
 // desktop
 
 @media (min-width: $desktop-width) {
   .form-choice__list {
-    grid-template-columns: 1fr 1fr 1fr;
-    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 1052px;
+  }
+
+  .form-choice {
+    padding-top: 25px;
+  }
+
+  .form-choice__item {
+    padding-top: 41px;
+    padding-left: 0;
+  }
+
+  .form__wrapper-button-send {
+    width: 768px;
+    margin: 0 auto;
+    padding-top: 6px;
+    padding-bottom: 53px;
   }
 }
