@@ -7,7 +7,7 @@
   min-width: 320px;
 }
 
-.description-page {
+.main-countainer__description-page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,19 +20,13 @@
 }
 
 @media (min-resolution: 2dppx) {
-  .description-page {
+  .main-countainer__description-page {
     background-image: url("../img/vector.svg"), url("../img/back-desktop@2x.jpg");
     background-size: 1260px auto;
   }
 }
 
-.description-page__img-description__warper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.description-page__img-description {
+.main-countainer__description-page-img-description {
   padding-top: 90px;
   padding-bottom: 85px;
   width: 282px;
@@ -40,7 +34,7 @@
 }
 
 // тестовое описание курорта (слоган)
-.description-page__warperr-text {
+.main-countainer__description-page-wrapper-text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +42,7 @@
   width: 285px;
 }
 
-.description-page__title {
+.main-countainer__description-page-title {
   width: 265px;
   font-style: normal;
   font-weight: 700;
@@ -59,14 +53,14 @@
   padding-top: 34px;
 }
 
-.description-page__text {
+.main-countainer__description-page-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
-  margin: 36px 0 0 0;
-  padding-bottom: 53px;
+  margin: 34px 0 0 0;
+  padding-bottom: 19px;
 }
 
 // Планшетная версия
@@ -76,14 +70,14 @@
     width: auto;
   }
 
-  .description-page__img-description {
+  .main-countainer__description-page-img-description {
     width: 461px;
     height: 350px;
     padding-top: 77px;
     padding-bottom: 91px;
   }
 
-  .description-page {
+  .main-countainer__description-page {
     background-image: url("../img/vector.svg"), url("../img/back-desktop.jpg");
     background-repeat: no-repeat, no-repeat;
     width: 768px;
@@ -91,45 +85,51 @@
   }
 
   @media (min-resolution: 2dppx) {
-    .description-page {
+    .main-countainer__description-page {
       background-image: url("../img/vector.svg"), url("../img/back-desktop@2x.jpg");
     }
   }
 
-  .description-page__warperr-text {
+  .main-countainer__description-page-wrapper-text {
     width: auto;
     display: flex;
     text-align: center;
   }
 
-  .description-page__title {
+  .main-countainer__description-page-title {
     font-size: 21px;
     line-height: 26px;
     width: 520px;
     padding-top: 48px;
   }
 
-  .description-page__text {
+  .main-countainer__description-page-text {
     width: 520px;
-    margin: 30px 0 0 0;
+    margin: 32px 0 0;
+    padding-bottom: 53px;
   }
 }
 
 // десктоп
 @media (min-width: $desktop-width) {
-  .description-page {
+  .main-countainer__description-page {
     width: 1200px;
     background-image: url("../img/intro-triangle-desktop.svg"), url("../../img/back-desktop.jpg");
   }
 
   @media (min-resolution: 2dppx) {
-    .description-page {
+    .main-countainer__description-page {
       background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-desktop@2x.jpg");
       background-size: 1260px auto;
     }
   }
 
-  .description-page__title {
+  .main-countainer__description-page-title {
     padding-top: 64px;
+  }
+
+  .main-countainer__description-page-text {
+    margin: 27px 0 0;
+    padding-bottom: 45px;
   }
 }

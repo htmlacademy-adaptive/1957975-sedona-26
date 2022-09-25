@@ -1,5 +1,4 @@
 //<!-- опишите свои эмоции -->
-
 .form-feedback-area {
   padding: 16px;
   margin-top: 17px;
@@ -42,14 +41,24 @@ textarea::placeholder {
   }
 
   .form-feedback__title {
+    width: 308px;
+    margin: 6px auto;
     margin-top: -30px;
+    padding: 9px;
   }
 }
 
+// десктоп
 @media (min-width: $desktop-width) {
   .form-feedback-area {
     width: 742px;
     display: block;
     margin: 0 auto;
+  }
+
+  .form-feedback__title {
+    margin: 0 auto 16px;
+    padding-top: 6px;
+    width: auto;
   }
 }

@@ -1,4 +1,3 @@
-
 .find-hootle-section {
   margin: 0;
   display: flex;
@@ -15,7 +14,7 @@
 
 .find-hootle-section__title {
   margin: 0;
-  padding-top: 46px;
+  padding-top: 42px;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
@@ -33,7 +32,7 @@
   text-align: center;
 }
 
-.find-hootle-section--button {
+.find-hootle-section__button--tablet {
   width: 284px;
   height: 58px;
   background-color: $light-blue;
@@ -49,26 +48,37 @@
 }
 
 .find-hootle-section__map {
-  padding-top: 49px;
+  margin-top: 49px;
+  background-image: url("../img/map-mobile.jpg");
+  border: none;
+  height: 350px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/map-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
   //     <!-- блок с поиском гостиниц -->
   .find-hootle-section__wrapper {
-    padding: 60px 155px 58px;
+    padding: 39px 89px 29px;
     width: 435px;
   }
 
   .find-hootle-section__title {
     padding: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
   }
 
   .find-hootle-section__text {
     padding-top: 25px;
-    padding-bottom: 40px;
+    padding-bottom: 49px;
   }
 
-  .find-hootle-section--button {
+  .find-hootle-section__button--tablet {
     width: 458px;
   }
 
@@ -76,6 +86,12 @@
     width: 768px;
     height: 350px;
     padding-top: 0;
+    margin: 0;
+    background-image: url("../img/map-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
   }
 }
 
@@ -84,6 +100,11 @@
 @media (min-width: $desktop-width) {
   .find-hootle-section__map {
     width: 1200px;
+    background-image: url("img/map-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("img/map-desktop@2x.jpg");
+    }
   }
 
   .find-hootle-section__title {
@@ -93,7 +114,7 @@
   }
 
   .find-hootle-section__wrapper {
-    padding: 84px 155px 58px;
+    padding: 63px 155px 58px;
     width: 435px;
   }
 
