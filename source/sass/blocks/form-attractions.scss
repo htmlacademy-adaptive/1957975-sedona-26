@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   padding-top: 17px;
-  padding-left: 22px;
+  padding-left: 43px;
   display: grid;
   justify-content: start;
   justify-items: start;
@@ -23,6 +23,18 @@
   border-radius: 4px;
   background-color: $soft-gray;
   right: 100%;
+}
+
+.checkbox:hover::before {
+  background-color: $hover-gray;
+}
+
+.checkbox:active::before {
+  background-color: $active-gray;
+}
+
+.checkbox:active::after {
+  opacity: 0.3;
 }
 
 .checkbox::after {
@@ -50,7 +62,7 @@
   .form-attractions__title {
     width: 308px;
     margin: 0 auto;
-    margin-top: -26px;
+    margin-top: -15px;
   }
 
   .form-attractions {
@@ -71,6 +83,7 @@
 
   .form-attractions__item-lable {
     position: relative;
+    padding-left: 45px;
   }
 
   .checkbox::before {
@@ -80,7 +93,7 @@
     height: 46px;
     border-radius: 4px;
     background-color: $soft-gray;
-    right: 100%;
+    right: 82%;
   }
 
   .checkbox::after {
@@ -91,7 +104,7 @@
     height: 16px;
     fill: $gray;
     top: 3px;
-    left: -33px;
+    left: -7px;
   }
 }
 
@@ -104,11 +117,21 @@
   .form-attractions__title {
     width: auto;
     margin: 0 auto;
+    padding-top: 4px;
   }
 
   .form-attractions__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: auto;
+    padding-top: 49px;
+  }
+
+  .checkbox::before {
+    right: 85%;
+  }
+
+  .checkbox::after {
+    left: -12px;
   }
 }

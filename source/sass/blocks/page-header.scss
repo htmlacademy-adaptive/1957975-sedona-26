@@ -1,44 +1,31 @@
-// лого
+//лого
 .page-header__logo {
   text-decoration: none;
   position: absolute;
-  top: -400px;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.navigation__item {
-  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-
-
-.navigation__item:not(:last-child) {
-  margin-bottom: 1px;
-}
-
-.navigation__item:last-child {
-  background: linear-gradient(180deg, rgba(0, 1, 0, 0) 75%, rgba(0, 0, 0, 0.2) 100%);
-  box-shadow: none;
+  z-index: 1;
 }
 
 // навигация
 .page-header__navigation {
-  min-height: 56px;
-  min-width: 320px;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
   position: relative;
 }
 
-// кнопка мобильной навигации
+// кнопка
 .page-header__toggle {
-  position: absolute;
+  z-index: 10;
   top: 0;
   right: 0;
-  z-index: 1;
   width: 56px;
   height: 56px;
   background-color: inherit;
-  cursor: pointer;
   border: none;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.6;
@@ -49,30 +36,41 @@
   }
 }
 
-.page-header__navigation--closed .page-header__toggle::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 20px;
-  top: 26px;
-  height: 4px;
-  width: 22px;
-  background-color: $light-blue;
-  box-shadow: 0 7px $light-blue, 0 -7px $light-blue;
+//(closed) состояние для кнопки при закрытом меню.
+.page-header__navigation--closed .page-header__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: 17px;
+    height: 4px;
+    width: 22px;
+    background-color: $light-blue;
+    box-shadow: 0 7px $light-blue, 0 -7px $light-blue;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-// кнопка при откртытом состоянии меню (крестик)
+// (opened) состояние для кнопки при открытом меню
 .page-header__navigation--opened .page-header__toggle {
   &::before,
   &::after {
     content: "";
     top: 26px;
-    left: 12px;
+    right: 16px;
     width: 28px;
     height: 4px;
     background-color: $white;
     display: block;
     position: absolute;
+    z-index: 10;
   }
 
   &::before {
@@ -83,27 +81,34 @@
   &::after {
     transform: rotate(-45deg);
   }
-
-  &:active::before,
-  &:active::after {
-    background-color: $white;
-  }
 }
 
-.page-header__navigation--closed .navigation__list--closed {
-  display: none;
-}
-
-.navigation__list {
+// список меню
+.page-header__navigation-list {
   width: 100%;
   min-width: 320px;
   list-style: none;
   margin: 0;
   padding: 0;
+  z-index: 1;
   background-color: $light-blue;
+  position: absolute;
 }
 
-.navigation__link {
+.page-header__navigation-item {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.page-header__navigation-item:not(:last-child) {
+  margin-bottom: 1px;
+}
+
+.page-header__navigation-item:last-child {
+  background: linear-gradient(180deg, rgba(0, 1, 0, 0) 75%, rgba(0, 0, 0, 0.2) 100%);
+  box-shadow: none;
+}
+
+.page-header__navigation-link {
   text-align: center;
   display: block;
   text-decoration: none;
@@ -112,16 +117,32 @@
   line-height: 26px;
   text-transform: uppercase;
   color: $white;
-  padding: 17px 0 12px;
+  padding: 17px 56px 12px;
 
   &:hover {
     background: linear-gradient(180deg, rgba(0, 1, 0, 0) 75%, rgba(0, 0, 0, 0.2) 100%);
     background-color: $blue;
   }
 
-  &:active {
+  &:focus {
     background-color: $dark-blue;
     color: rgba(255, 255, 255, 0.3);
+    border: none;
+  }
+}
+
+// состояние меню при отключенном JS
+.page-header__navigation--nojs .page-header__toggle {
+  display: none;
+}
+
+.page-header__navigation--nojs .page-header__navigation-list {
+  position: static;
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header__navigation--closed .page-header__navigation-item {
+    display: none;
   }
 }
 
@@ -132,7 +153,7 @@
   }
 
   .page-header__logo {
-    z-index: 1;
+    z-index: 10;
     position: absolute;
     top: 0;
   }
@@ -143,7 +164,7 @@
     width: 768px;
   }
 
-  .navigation__list {
+  .page-header__navigation-list {
     min-height: 56px;
     position: inherit;
     display: grid;
@@ -152,23 +173,25 @@
     background-color: $white;
   }
 
-  .navigation__item {
+  .page-header__navigation-item {
     min-width: 153px;
     box-shadow: none;
   }
 
-  .navigation__item:nth-child(3) {
+  .page-header__navigation-item:nth-child(3) {
     grid-column: 4 / 5;
   }
 
-  .navigation__item:last-child {
+  .page-header__navigation-item:last-child {
     background: none;
   }
 
-  .navigation__link {
+  .page-header__navigation-link {
     color: $black;
     font-size: 14px;
     line-height: 21px;
+    padding-left: 0;
+    padding-right: 0;
 
     &:hover {
       color: $light-blue;
@@ -180,18 +203,18 @@
     }
 
     &:focus {
-      color: $curent-color;
+      color: $white;
     }
   }
 
-  .navigation__link--current {
+  .page-header__navigation-link--current {
     color: $curent-color;
   }
 }
 
-// ДЕсктоп
+// desktop
 @media (min-width: $desktop-width) {
-  .navigation__list {
+  .page-header__navigation-list {
     width: 1200px;
   }
 
