@@ -13,6 +13,15 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  &:hover {
+    background-color: $hover-gray;
+  }
+}
+
+.form-feedback-area:focus {
+  outline: 1px solid $black;
+  background-color: $active-gray;
 }
 
 .form-feedback {
@@ -37,7 +46,7 @@ textarea::placeholder {
   }
 
   .form-feedback-area {
-    width: 648px;
+    width: 616px;
   }
 
   .form-feedback__title {

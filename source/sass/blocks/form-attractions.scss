@@ -8,11 +8,11 @@
   margin: 0;
   padding: 0;
   padding-top: 17px;
-  padding-left: 43px;
+  padding-left: 47px;
   display: grid;
   justify-content: start;
   justify-items: start;
-  gap: 16px;
+  gap: 17px;
 }
 
 .checkbox::before {
@@ -29,7 +29,7 @@
   background-color: $hover-gray;
 }
 
-.checkbox:active::before {
+.form-attractions__checkbox:focus + .checkbox::before {
   background-color: $active-gray;
 }
 
@@ -117,14 +117,16 @@
   .form-attractions__title {
     width: auto;
     margin: 0 auto;
-    padding-top: 4px;
   }
 
   .form-attractions__list {
     display: flex;
-    justify-content: space-evenly;
-    width: auto;
-    padding-top: 49px;
+    justify-content: space-between;
+
+    padding-top: 45px;
+    margin: 0 auto;
+    width: 828px;
+    margin-left: 65px;
   }
 
   .checkbox::before {

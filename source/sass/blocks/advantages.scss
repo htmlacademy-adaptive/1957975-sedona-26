@@ -55,13 +55,17 @@
   padding-top: 17px;
 }
 
+.advantages__card-text br {
+  display: none;
+}
 // <!-- блок с описанием преимуществ №1  -->
 .advantages__list {
   list-style-type: none;
   margin: 0;
   display: grid;
   gap: 22px;
-  padding-top: 25px;
+  padding-top: 26px;
+  padding-left: 50px;
 }
 
 .advantages__item {
@@ -112,10 +116,13 @@
 }
 
 .advantages__item-gift {
-  left: -40px;
+  left: -45px;
+  top: -4px;
 }
 
-
+.advantages__card-title br {
+  display: none;
+}
 // <!-- блок с описанием преимуществ №2  -->
 .advantages__sub-list {
   list-style-type: none;
@@ -152,6 +159,10 @@
   line-height: 26px;
 }
 
+.advantages__sub-item-text {
+  margin: 15px 0;
+}
+
 .advantages__sub-item-description {
   margin: 0;
   text-align: center;
@@ -184,11 +195,19 @@
     font-style: normal;
     width: 216px;
     margin: 0 auto;
-    padding-top: 8px;
+    padding-top: 0;
+  }
+
+  .advantages__card-text {
+    padding-top: 27px;
+  }
+
+  .advantages__card-text br {
+    display: block;
   }
 
   .advantages__card-wrapper {
-    padding: 33px 18px 43px;
+    padding: 34px 18px 43px;
   }
 
   .advantages__card-img-wrapper {
@@ -234,7 +253,7 @@
   }
 
   .advantages__item-gift {
-    left: 53px;
+    left: 60px;
     top: -113px;
     width: 82px;
     height: 103px;
@@ -245,6 +264,9 @@
     padding-top: 24px;
   }
 
+  .advantages__card-title br {
+    display: block;
+  }
   //<!-- блок с описанием преимуществ №2  -->
   .advantages__sub-list {
     padding: 43px 0 51px 0;
@@ -284,26 +306,27 @@
 
   .advantages__list {
     gap: 104px;
-    padding: 158px 28px 84px 36px;
+    padding: 160px 45px 80px 50px;
   }
 
   .advantages__item-home {
-    left: 117px;
+    left: 113px;
     top: -109px;
   }
 
   .advantages__item-eat {
-    left: 117px;
-    top: -109px;
+    left: 108px;
+    top: -114px;
   }
 
   .advantages__item-gift {
-    left: 117px;
-    top: -109px;
+    left: 111px;
+    top: -115px;
   }
 
   .advantages__sub-list {
     justify-content: space-around;
+    padding: 40px 0 50px;
   }
 
   .advantages__card:first-of-type {
@@ -315,10 +338,14 @@
   }
 
   .advantages__card-wrapper {
-    padding: 46px 94px 43px;
+    padding: 40px 90px 35px;
   }
 
   .advantages__card-title {
     padding: 0;
+  }
+
+  .advantages__item-description br {
+    display: none;
   }
 }
