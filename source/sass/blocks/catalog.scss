@@ -79,12 +79,17 @@
   }
 
   .catalog-card__likes {
-    padding-top: 0;
+    padding-top: 20px;
     padding-bottom: 0;
   }
 
+  .catalog-card__likes-counter {
+    margin: 0 7px;
+    padding-right: 11px;
+  }
+
   .catalog-card-main {
-    padding-top: 58px;
+    padding-top: 37px;
     grid-column: 1/-1;
   }
 
@@ -119,6 +124,11 @@
 
   .catalog-card__img {
     width: auto;
+  }
+
+  .catalog-card__likes-counter {
+    margin: 0;
+    padding-right: 0;
   }
 
   .catalog-card {

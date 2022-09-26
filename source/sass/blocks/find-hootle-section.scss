@@ -1,27 +1,27 @@
-.find-hootle-section {
+.find-hotel-section {
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.find-hootle-section__wrapper {
+.find-hotel-section__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 261px;
 }
 
-.find-hootle-section__title {
+.find-hotel-section__title {
   margin: 0;
-  padding-top: 42px;
+  padding-top: 45px;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
 }
 
-.find-hootle-section__text {
+.find-hotel-section__text {
   margin: 0;
   padding-bottom: 11px;
   padding-top: 20px;
@@ -32,7 +32,11 @@
   text-align: center;
 }
 
-.find-hootle-section__button--tablet {
+.find-hotel-section__text br {
+  display: none;
+}
+
+.find-hotel-section__button--tablet {
   width: 284px;
   height: 58px;
   background-color: $light-blue;
@@ -47,7 +51,7 @@
   text-decoration: none;
 }
 
-.find-hootle-section__map {
+.find-hotel-section__map {
   margin-top: 49px;
   background-image: url("../img/map-mobile.jpg");
   border: none;
@@ -58,14 +62,15 @@
   }
 }
 
+// Планшет
 @media (min-width: $tablet-width) {
   //     <!-- блок с поиском гостиниц -->
-  .find-hootle-section__wrapper {
-    padding: 39px 89px 29px;
+  .find-hotel-section__wrapper {
+    padding: 40px 89px 29px;
     width: 435px;
   }
 
-  .find-hootle-section__title {
+  .find-hotel-section__title {
     padding: 0;
     font-style: normal;
     font-weight: 700;
@@ -73,16 +78,20 @@
     line-height: 26px;
   }
 
-  .find-hootle-section__text {
-    padding-top: 25px;
-    padding-bottom: 49px;
+  .find-hotel-section__text {
+    padding-top: 35px;
+    padding-bottom: 40px;
   }
 
-  .find-hootle-section__button--tablet {
+  .find-hotel-section__text br {
+    display: block;
+  }
+
+  .find-hotel-section__button--tablet {
     width: 458px;
   }
 
-  .find-hootle-section__map {
+  .find-hotel-section__map {
     width: 768px;
     height: 350px;
     padding-top: 0;
@@ -98,7 +107,7 @@
 
 // десктоп
 @media (min-width: $desktop-width) {
-  .find-hootle-section__map {
+  .find-hotel-section__map {
     width: 1200px;
     background-image: url("img/map-desktop.jpg");
 
@@ -107,18 +116,19 @@
     }
   }
 
-  .find-hootle-section__title {
+  .find-hotel-section__title {
     font-weight: 700;
     font-size: 30px;
     line-height: 26px;
   }
 
-  .find-hootle-section__wrapper {
-    padding: 63px 155px 58px;
-    width: 435px;
+  .find-hotel-section__wrapper {
+    padding: 60px 155px 60px;
+    min-width: 460px;
   }
 
-  .find-hootle-section__text {
-    padding-bottom: 53px;
+  .find-hotel-section__text {
+    padding-top: 30px;
+    padding-bottom: 45px;
   }
 }

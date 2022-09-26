@@ -46,15 +46,16 @@
   cursor: pointer;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   border: none;
-  width: 0;
-  height: 0;
+  background-color: transparent;
 }
 
 .promo__video-button-play-img {
   position: absolute;
-  left: 120px;
-  top: 69px;
+  top: 36%;
+  right: 38%;
 }
 
 // Планшет
@@ -74,22 +75,26 @@
   }
 
   .promo__video {
-    margin-top: 65px;
+    margin-top: 90px;
   }
 
   .promo__description-text {
     margin: 12px 0 0;
   }
 
+  .promo__video-button-play {
+    top: 0;
+    left: 0;
+  }
+
   .promo__video-button-play-img {
-    left: 297px;
-    top: 249px;
+    top: 45%;
+    right: 46%;
   }
 
   .promo__video-img {
     width: 648px;
     height: 500px;
-    padding-top: 22px;
   }
 }
 
@@ -106,11 +111,6 @@
 
   .promo__video {
     padding-top: 3px;
-  }
-
-  .promo__video-button-play-img {
-    left: 375px;
-    top: 252px;
   }
 
   .promo__video-img {

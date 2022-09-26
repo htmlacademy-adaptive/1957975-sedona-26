@@ -1,6 +1,6 @@
 // <!-- общее впечатление  -->
 .form-choice {
-  padding-bottom: 24px;
+  padding-bottom: 32px;
   padding-top: 32px;
 }
 
@@ -8,22 +8,20 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-top: 30px;
   display: grid;
-  gap: 16px;
-}
-
-.form-choice__item {
-  padding-top: 25px;
-}
-
-.radio {
-  position: relative;
+  gap: 35px;
 }
 
 .form-choice__item-label {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin-left: 27px;
+}
+
+.radio {
+  position: relative;
 }
 
 .radio::before {
@@ -31,16 +29,16 @@
   content: "";
   width: 46px;
   height: 46px;
-  left: -53px;
-  top: -12px;
+  left: -60px;
+  top: -15px;
   background-color: $soft-gray;
   border-radius: 50%;
 }
 
 .radio::after {
   position: absolute;
-  left: -38px;
-  top: 3px;
+  left: -45px;
+  top: -1px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -53,6 +51,15 @@
 
 .radio:active::before {
   background-color: $active-gray;
+}
+
+// .form-choice__input:focus + .radio {
+//   background-color: black;
+// }
+
+.form-choice__input:focus + .radio::before {
+  background-color: $active-gray;
+  outline: 1px solid $black;
 }
 
 .radio:active::after {
@@ -77,18 +84,29 @@
     grid-template-columns: 1fr 1fr;
     width: 575px;
     margin: 0 auto;
+    padding-top: 40px;
+  }
+
+
+  .form-choice__title {
+    width: 308px;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
   }
 
   .form-choice__item {
-    padding-left: 40px;
+    padding-left: 20px;
   }
 
   .radio::after {
-    left: -47px;
+    left: -45px;
+    top: 5px;
   }
 
   .radio::before {
-    left: -64px;
+    left: -60px;
+    top: -10px;
   }
 }
 
@@ -97,16 +115,25 @@
 @media (min-width: $desktop-width) {
   .form-choice__list {
     display: flex;
-    justify-content: space-evenly;
-    width: 1052px;
+    justify-content: space-around;
+    width: 900px;
+    padding-top: 56px;
+    margin-left: 80px;
+  }
+
+  .form-choice__item-label {
+    margin: 0;
   }
 
   .form-choice {
-    padding-top: 25px;
+    padding-top: 12px;
+  }
+
+  .form-choice__title {
+    width: auto;
   }
 
   .form-choice__item {
-    padding-top: 41px;
     padding-left: 0;
   }
 

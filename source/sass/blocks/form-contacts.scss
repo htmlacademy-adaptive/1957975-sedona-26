@@ -27,7 +27,7 @@
 
 .form-contacts__item-input {
   font-family: inherit;
-  width: 222px;
+  width: 184px;
   padding: 16px;
   border: none;
   background-color: #f2f2f2;
@@ -52,6 +52,10 @@
     outline-offset: -1px;
     outline-color: #e5e5e5;
   }
+}
+
+.form-contacts__item-input::placeholder {
+  padding-left: 0;
 }
 
 .form-contacts__item-image {
@@ -97,6 +101,10 @@
 
   .form-contacts {
     margin-left: 63px;
+  }
+
+  .form-contacts__title {
+    margin-left: -45px;
   }
 
   .form-contacts__item-contacts {

@@ -13,66 +13,6 @@
   padding-bottom: 39px;
 }
 
-.form-users__list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.title-form {
-  margin: 0;
-  padding-top: 25px;
-  padding-bottom: 4px;
-  text-align: center;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
-.form-users__name {
-  padding-left: 16px;
-  padding-top: 16px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: #333333;
-}
-
-.form-users__item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.form-users__input {
-  font-family: inherit;
-  padding: 16px;
-  background-color: #f2f2f2;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  border: none;
-  width: 240px;
-
-  &:hover {
-    background-color: #e5e5e5;
-  }
-
-  &:active {
-    background-color: #ffffff;
-    outline-width: 4px;
-    outline-color: #e5e5e5;
-  }
-
-  &:focus {
-    outline-width: 4px;
-    outline-color: #e5e5e5;
-  }
-}
-
 input::-webkit-input-placeholder {
   font-weight: 700;
   font-size: 18px;
@@ -114,7 +54,6 @@ input::-webkit-input-placeholder {
 // Планшет
 @media (min-width: $tablet-width) {
   .form-wrapper {
-    padding: 0 60px;
     width: calc(100% - 120px);
   }
 
@@ -122,79 +61,6 @@ input::-webkit-input-placeholder {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 37px 0;
-  }
-
-  .form-users {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      background-color: $lighr-gray;
-      width: 1px;
-      height: 100%;
-      top: 0;
-      right: 0;
-      left: auto;
-    }
-  }
-
-  .form-group {
-    padding: 0;
-    padding-left: 30px;
-    position: relative;
-
-    &::before {
-      content: none;
-    }
-  }
-
-  .title-form {
-    font-size: 21px;
-    line-height: 26px;
-    padding: 0;
-    padding-bottom: 15px;
-    position: relative;
-  }
-
-  .form-choice__title {
-    width: 308px;
-    margin: 0 auto;
-    position: relative;
-  }
-
-  .title-form--decor {
-    &::before {
-      content: "";
-      position: absolute;
-      left: -54%;
-      top: 50%;
-      height: 1px;
-      background-color: #e5e5e5;
-      width: 123px;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      right: -173px;
-      top: 50%;
-      height: 1px;
-      background-color: #e5e5e5;
-      width: 123px;
-    }
-  }
-
-  .form-users__input {
-    min-width: 248px;
-  }
-
-  .contacts__item-input {
-    margin-left: 40px;
-  }
-
-  .form-users__name {
-    text-align: start;
   }
 
   .form__button {
@@ -223,47 +89,8 @@ input::-webkit-input-placeholder {
     width: calc(100% - 205px);
   }
 
-  .form-choice__title {
-    width: auto;
-  }
-
-  .form-users__item {
-    align-items: stretch;
-  }
-
-  .form-users__input {
-    min-width: 398px;
-  }
-
-  .form-users__name {
-    padding-left: 27px;
-    padding-top: 13px;
-  }
-
-  .title-form--decor {
-    &::before {
-      width: 280px;
-      left: 0;
-      top: 45%;
-    }
-
-    &::after {
-      width: 280px;
-      right: 0;
-      top: 45%;
-    }
-  }
-
   .form {
     gap: 56px 0;
-  }
-
-  .form-users::after {
-    right: -28px;
-  }
-
-  .form__users.form-users.form-group {
-    padding-left: 30px;
   }
 
   .form-group {
