@@ -1,0 +1,64 @@
+.checkbox::before {
+  position: absolute;
+  content: "";
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: $soft-gray;
+  right: 100%;
+}
+
+.checkbox:hover::before {
+  background-color: $hover-gray;
+}
+
+
+.checkbox:active::after {
+  opacity: 0.3;
+}
+
+.checkbox::after {
+  position: absolute;
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 16px;
+  fill: $gray;
+  top: 3px;
+  left: -33px;
+}
+
+// планшет
+@media (min-width: $tablet-width) {
+  .checkbox::before {
+    position: absolute;
+    content: "";
+    width: 46px;
+    height: 46px;
+    border-radius: 4px;
+    background-color: $soft-gray;
+    right: 82%;
+  }
+
+  .checkbox::after {
+    position: absolute;
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 16px;
+    fill: $gray;
+    top: 3px;
+    left: -7px;
+  }
+}
+
+// десктоп
+@media (min-width: $desktop-width) {
+  .checkbox::before {
+    right: 85%;
+  }
+
+  .checkbox::after {
+    left: -12px;
+  }
+}

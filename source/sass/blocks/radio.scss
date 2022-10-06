@@ -1,0 +1,50 @@
+
+.radio {
+  position: relative;
+}
+
+.radio::before {
+  position: absolute;
+  content: "";
+  width: 46px;
+  height: 46px;
+  left: -60px;
+  top: -15px;
+  background-color: $soft-gray;
+  border-radius: 50%;
+}
+
+.radio::after {
+  position: absolute;
+  left: -45px;
+  top: -1px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $gray;
+}
+
+.radio:hover::before {
+  background-color: $hover-gray;
+}
+
+.radio:active::before {
+  background-color: $active-gray;
+}
+
+.radio:active::after {
+  opacity: 0.3;
+}
+
+// планщет
+@media (min-width: $tablet-width) {
+  .radio::after {
+    left: -45px;
+    top: 5px;
+  }
+
+  .radio::before {
+    left: -60px;
+    top: -10px;
+  }
+}
